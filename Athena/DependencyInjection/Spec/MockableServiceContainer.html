@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="generator" content="Crystal Docs 0.35.1">
+<meta name="crystal_docs.project_version" content="master">
+<meta name="crystal_docs.project_name" content="athena-dependency_injection">
+
+
+
+<link href="../../../css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../../../js/doc.js"></script>
+
+  <meta name="repository-name" content="athena-dependency_injection">
+  <title>Athena::DependencyInjection::Spec::MockableServiceContainer - athena-dependency_injection master</title>
+  <script type="text/javascript">
+    CrystalDocs.base_path = "../../../";
+  </script>
+</head>
+<body>
+
+<svg class="hidden">
+  <symbol id="octicon-link" viewBox="0 0 16 16">
+    <path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
+  </symbol>
+</svg>
+<div class="sidebar">
+  <div class="sidebar-header">
+    <div class="search-box">
+      <input type="search" class="search-input" placeholder="Search..." spellcheck="false" aria-label="Search">
+    </div>
+
+    <div class="project-summary">
+      <h1 class="project-name">
+        <a href="../../../index.html">
+          athena-dependency_injection
+        </a>
+      </h1>
+
+      <span class="project-version">
+        master
+      </span>
+    </div>
+  </div>
+
+  <div class="search-results hidden">
+    <ul class="search-list"></ul>
+  </div>
+
+  <div class="types-list">
+    <ul>
+  
+  <li class=" " data-id="athena-dependency_injection/ACF" data-name="acf">
+      <a href="../../../ACF.html">ACF</a>
+      
+    </li>
+  
+  <li class=" " data-id="athena-dependency_injection/ACFA" data-name="acfa">
+      <a href="../../../ACFA.html">ACFA</a>
+      
+    </li>
+  
+  <li class=" " data-id="athena-dependency_injection/ADI" data-name="adi">
+      <a href="../../../ADI.html">ADI</a>
+      
+    </li>
+  
+  <li class=" " data-id="athena-dependency_injection/ASPEC" data-name="aspec">
+      <a href="../../../ASPEC.html">ASPEC</a>
+      
+    </li>
+  
+  <li class="parent open current" data-id="athena-dependency_injection/Athena" data-name="athena">
+      <a href="../../../Athena.html">Athena</a>
+      
+        <ul>
+  
+  <li class="parent " data-id="athena-dependency_injection/Athena/Config" data-name="athena::config">
+      <a href="../../../Athena/Config.html">Config</a>
+      
+        <ul>
+  
+  <li class="parent " data-id="athena-dependency_injection/Athena/Config/AnnotationConfigurations" data-name="athena::config::annotationconfigurations">
+      <a href="../../../Athena/Config/AnnotationConfigurations.html">AnnotationConfigurations</a>
+      
+        <ul>
+  
+  <li class=" " data-id="athena-dependency_injection/Athena/Config/AnnotationConfigurations/AnnotationHash" data-name="athena::config::annotationconfigurations::annotationhash">
+      <a href="../../../Athena/Config/AnnotationConfigurations/AnnotationHash.html">AnnotationHash</a>
+      
+    </li>
+  
+  <li class=" " data-id="athena-dependency_injection/Athena/Config/AnnotationConfigurations/Classes" data-name="athena::config::annotationconfigurations::classes">
+      <a href="../../../Athena/Config/AnnotationConfigurations/Classes.html">Classes</a>
+      
+    </li>
+  
+  <li class=" " data-id="athena-dependency_injection/Athena/Config/AnnotationConfigurations/ConfigurationBase" data-name="athena::config::annotationconfigurations::configurationbase">
+      <a href="../../../Athena/Config/AnnotationConfigurations/ConfigurationBase.html">ConfigurationBase</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class="parent " data-id="athena-dependency_injection/Athena/Config/Annotations" data-name="athena::config::annotations">
+      <a href="../../../Athena/Config/Annotations.html">Annotations</a>
+      
+        <ul>
+  
+  <li class=" " data-id="athena-dependency_injection/Athena/Config/Annotations/Resolvable" data-name="athena::config::annotations::resolvable">
+      <a href="../../../Athena/Config/Annotations/Resolvable.html">Resolvable</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="athena-dependency_injection/Athena/Config/Base" data-name="athena::config::base">
+      <a href="../../../Athena/Config/Base.html">Base</a>
+      
+    </li>
+  
+  <li class=" " data-id="athena-dependency_injection/Athena/Config/ConfigurationResolver" data-name="athena::config::configurationresolver">
+      <a href="../../../Athena/Config/ConfigurationResolver.html">ConfigurationResolver</a>
+      
+    </li>
+  
+  <li class=" " data-id="athena-dependency_injection/Athena/Config/ConfigurationResolverInterface" data-name="athena::config::configurationresolverinterface">
+      <a href="../../../Athena/Config/ConfigurationResolverInterface.html">ConfigurationResolverInterface</a>
+      
+    </li>
+  
+  <li class=" " data-id="athena-dependency_injection/Athena/Config/Parameters" data-name="athena::config::parameters">
+      <a href="../../../Athena/Config/Parameters.html">Parameters</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class="parent open current" data-id="athena-dependency_injection/Athena/DependencyInjection" data-name="athena::dependencyinjection">
+      <a href="../../../Athena/DependencyInjection.html">DependencyInjection</a>
+      
+        <ul>
+  
+  <li class=" " data-id="athena-dependency_injection/Athena/DependencyInjection/Inject" data-name="athena::dependencyinjection::inject">
+      <a href="../../../Athena/DependencyInjection/Inject.html">Inject</a>
+      
+    </li>
+  
+  <li class=" " data-id="athena-dependency_injection/Athena/DependencyInjection/Proxy" data-name="athena::dependencyinjection::proxy(o)">
+      <a href="../../../Athena/DependencyInjection/Proxy.html">Proxy</a>
+      
+    </li>
+  
+  <li class=" " data-id="athena-dependency_injection/Athena/DependencyInjection/Register" data-name="athena::dependencyinjection::register">
+      <a href="../../../Athena/DependencyInjection/Register.html">Register</a>
+      
+    </li>
+  
+  <li class=" " data-id="athena-dependency_injection/Athena/DependencyInjection/ServiceContainer" data-name="athena::dependencyinjection::servicecontainer">
+      <a href="../../../Athena/DependencyInjection/ServiceContainer.html">ServiceContainer</a>
+      
+    </li>
+  
+  <li class="parent open current" data-id="athena-dependency_injection/Athena/DependencyInjection/Spec" data-name="athena::dependencyinjection::spec">
+      <a href="../../../Athena/DependencyInjection/Spec.html">Spec</a>
+      
+        <ul>
+  
+  <li class=" current" data-id="athena-dependency_injection/Athena/DependencyInjection/Spec/MockableServiceContainer" data-name="athena::dependencyinjection::spec::mockableservicecontainer">
+      <a href="../../../Athena/DependencyInjection/Spec/MockableServiceContainer.html">MockableServiceContainer</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class="parent " data-id="athena-dependency_injection/Athena/Spec" data-name="athena::spec">
+      <a href="../../../Athena/Spec.html">Spec</a>
+      
+        <ul>
+  
+  <li class=" " data-id="athena-dependency_injection/Athena/Spec/Methods" data-name="athena::spec::methods">
+      <a href="../../../Athena/Spec/Methods.html">Methods</a>
+      
+    </li>
+  
+  <li class="parent " data-id="athena-dependency_injection/Athena/Spec/TestCase" data-name="athena::spec::testcase">
+      <a href="../../../Athena/Spec/TestCase.html">TestCase</a>
+      
+        <ul>
+  
+  <li class=" " data-id="athena-dependency_injection/Athena/Spec/TestCase/DataProvider" data-name="athena::spec::testcase::dataprovider">
+      <a href="../../../Athena/Spec/TestCase/DataProvider.html">DataProvider</a>
+      
+    </li>
+  
+  <li class=" " data-id="athena-dependency_injection/Athena/Spec/TestCase/Focus" data-name="athena::spec::testcase::focus">
+      <a href="../../../Athena/Spec/TestCase/Focus.html">Focus</a>
+      
+    </li>
+  
+  <li class=" " data-id="athena-dependency_injection/Athena/Spec/TestCase/Pending" data-name="athena::spec::testcase::pending">
+      <a href="../../../Athena/Spec/TestCase/Pending.html">Pending</a>
+      
+    </li>
+  
+  <li class=" " data-id="athena-dependency_injection/Athena/Spec/TestCase/Tags" data-name="athena::spec::testcase::tags">
+      <a href="../../../Athena/Spec/TestCase/Tags.html">Tags</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+</ul>
+
+  </div>
+</div>
+
+
+<div class="main-content">
+<h1 class="type-name">
+
+  <span class="kind">class</span> Athena::DependencyInjection::Spec::MockableServiceContainer
+
+</h1>
+
+
+  <ul class="superclass-hierarchy"><li class="superclass"><a href="../../../Athena/DependencyInjection/Spec/MockableServiceContainer.html">Athena::DependencyInjection::Spec::MockableServiceContainer</a></li><li class="superclass"><a href="../../../Athena/DependencyInjection/ServiceContainer.html">Athena::DependencyInjection::ServiceContainer</a></li><li class="superclass">Reference</li><li class="superclass">Object</li></ul>
+
+
+
+
+  <h2>
+    <a id="overview" class="anchor" href="#overview">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Overview
+  </h2>
+
+  <p>A mock implementation of <code><a href="../../../Athena/DependencyInjection/ServiceContainer.html">ADI::ServiceContainer</a></code> that be used within a testing context to allow for mocking out services without affecting the actual container outside of tests.</p>
+
+<p>An example of this is when integration testing service based <a href="https://athena-framework.github.io/athena/Athena/Routing/Controller.html">ART::Controller</a>s.
+Service dependencies that interact with an external source, like a third party API or a database, should most likely be mocked out.
+However your other services should be left as is in order to get the most benefit from the test.</p>
+
+<h2><a id="mocking" class="anchor" href="#mocking">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>Mocking</h2>
+
+<p>The <code><a href="../../../Athena/DependencyInjection/ServiceContainer.html">ADI::ServiceContainer</a></code> is nothing more than a normal Crystal class with some instance variables and methods.
+As such, mocking services is as easy as monkey patching <code>self</code> with the mocked versions, assuming of course they are of a compatible type.</p>
+
+<p>Given Crystal's lack of a robust mocking shard, it isn't as straightforward as other languages.
+The best way at the moment is either using inheritance or interfaces (modules) to manually create a concrete test class/struct;
+with the latter option being preferred as it would work for both structs and classes.</p>
+
+<p>For example, we can create a mock implementation of a type by extending it:</p>
+
+<pre><code class="language-crystal"><span class="k">class</span> <span class="t">MockMyService</span> <span class="o">&lt;</span> <span class="t">MyService</span>
+  <span class="k">def</span> <span class="m">get_value</span>
+    <span class="c"># Can now just return a static expected value.</span>
+    <span class="c"># Test properties/constructor(s) can also be added to make it a bit more generic.</span>
+    <span class="n">1234</span>
+  <span class="k">end</span>
+<span class="k">end</span></code></pre>
+
+<p>Because our mock extends <code>MyService</code>, it is a compatible type for anything typed as <code>MyService</code>.</p>
+
+<p>Another way to handle mocking is via interfaces (modules).</p>
+
+<pre><code class="language-crystal"><span class="k">module</span> <span class="t">SomeInterface</span>; <span class="k">end</span>
+
+<span class="k">struct</span> <span class="t">MockMyService</span>
+  <span class="k">include</span> <span class="t">SomeInterface</span>
+<span class="k">end</span></code></pre>
+
+<p>Because our mock implements <code>SomeInterface</code>, it is a compatible type for anything typed as <code>SomeInterface</code>.</p>
+
+<p><span class="flag purple">NOTE</span>  Service mocks do not need to registered as services themselves since they will need to be configured manually.</p>
+
+<p><span class="flag purple">NOTE</span>  The <code>type</code> argument as part of the <code><a href="../../../Athena/DependencyInjection/Register.html">ADI::Register</a></code> annotation can be used to set the type of a service within the container.
+See <code><a href="../../../Athena/DependencyInjection/Register.html">ADI::Register</a>@customizing-services-type</code> for more details.</p>
+
+<h3><a id="dynamic-mocks" class="anchor" href="#dynamic-mocks">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>Dynamic Mocks</h3>
+
+<p>A dynamic mock consists of adding a <code>setter</code> to <code>self</code> that allows setting the mocked service dynamically at runtime,
+while keeping the original up until if/when it is replaced.</p>
+
+<pre><code class="language-crystal"><span class="k">class</span> <span class="t">ADI</span><span class="t">::</span><span class="t">Spec</span><span class="t">::</span><span class="t">MockableServiceContainer</span>
+  <span class="c"># The setter should be nilable as they&#39;re lazily initialized within the container.</span>
+  setter my_service : <span class="t">MyServiceInterface</span>?
+<span class="k">end</span>
+
+<span class="c"># ...</span>
+
+<span class="c"># Now the `my_service` service can be replaced at runtime.</span>
+mock_container.my_service <span class="o">=</span> <span class="t">MockMyService</span>.<span class="k">new</span>
+
+<span class="c"># ...</span></code></pre>
+
+<h3><a id="global-mocks" class="anchor" href="#global-mocks">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>Global Mocks</h3>
+
+<p>Global mocks totally replace the original service, i.e. always return the mocked service.</p>
+
+<pre><code class="language-crystal"><span class="k">class</span> <span class="t">ADI</span><span class="t">::</span><span class="t">Spec</span><span class="t">::</span><span class="t">MockableServiceContainer</span>
+  <span class="c"># Global mocks should use the block based `getter` macro.</span>
+  getter my_service : <span class="t">MyServiceInterface</span> { <span class="t">MockMyService</span>.<span class="k">new</span> }
+<span class="k">end</span>
+
+<span class="c"># `MockMyService` will now be injected across the board when using `self`.</span>
+<span class="c"># ...</span></code></pre>
+
+<h3><a id="hybrid-mocks" class="anchor" href="#hybrid-mocks">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>Hybrid Mocks</h3>
+
+<p>Dynamic and Global mocking can also be combined to allow having a default mock, but allow overriding if/when needed.
+This can be accomplished by adding both a getter and setter to <code>self.</code></p>
+
+<pre><code class="language-crystal"><span class="k">class</span> <span class="t">ADI</span><span class="t">::</span><span class="t">Spec</span><span class="t">::</span><span class="t">MockableServiceContainer</span>
+  <span class="c"># Hybrid mocks should use the block based `property` macro.</span>
+  property my_service : <span class="t">MyServiceInterface</span> { <span class="t">DefaultMockService</span>.<span class="k">new</span> }
+<span class="k">end</span>
+
+<span class="c"># ...</span>
+
+<span class="c"># `DefaultMockService` will now be injected across the board by when using `self`.</span>
+
+<span class="c"># But can still be replaced at runtime.</span>
+mock_container.my_service <span class="o">=</span> <span class="t">CustomMockService</span>.<span class="k">new</span>
+
+<span class="c"># ...</span></code></pre>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2>
+    <a id="defined-in" class="anchor" href="#defined-in">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Defined in:
+  </h2>
+  
+    
+      <a href="https://github.com/athena-framework/dependency-injection/blob/38ea4f122af6fba2138d527a5c93495ac7103389/src/spec.cr#L109" target="_blank">
+        spec.cr
+      </a>
+    
+    <br/>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="methods-inherited">
+  
+    
+
+
+    
+
+  <h3>Constructor methods inherited from class <code><a href="../../../Athena/DependencyInjection/ServiceContainer.html">Athena::DependencyInjection::ServiceContainer</a></code></h3>
+  
+  
+    <a href="../../../Athena/DependencyInjection/ServiceContainer.html#new-class-method" class="tooltip">
+      <span>new</span>
+    new</a>
+    
+  
+
+
+    
+
+
+  
+    
+
+
+    
+
+
+    
+
+
+  
+    
+
+
+    
+
+
+    
+
+
+  
+</div>
+
+
+
+
+
+
+
+
+
+</div>
+
+</body>
+</html>

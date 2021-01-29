@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="generator" content="Crystal Docs 0.35.1">
+<meta name="crystal_docs.project_version" content="master">
+<meta name="crystal_docs.project_name" content="athena-dependency_injection">
+
+
+
+<link href="../css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../js/doc.js"></script>
+
+  <meta name="repository-name" content="athena-dependency_injection">
+  <title>Athena::DependencyInjection - athena-dependency_injection master</title>
+  <script type="text/javascript">
+    CrystalDocs.base_path = "../";
+  </script>
+</head>
+<body>
+
+<svg class="hidden">
+  <symbol id="octicon-link" viewBox="0 0 16 16">
+    <path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
+  </symbol>
+</svg>
+<div class="sidebar">
+  <div class="sidebar-header">
+    <div class="search-box">
+      <input type="search" class="search-input" placeholder="Search..." spellcheck="false" aria-label="Search">
+    </div>
+
+    <div class="project-summary">
+      <h1 class="project-name">
+        <a href="../index.html">
+          athena-dependency_injection
+        </a>
+      </h1>
+
+      <span class="project-version">
+        master
+      </span>
+    </div>
+  </div>
+
+  <div class="search-results hidden">
+    <ul class="search-list"></ul>
+  </div>
+
+  <div class="types-list">
+    <ul>
+  
+  <li class=" " data-id="athena-dependency_injection/ACF" data-name="acf">
+      <a href="../ACF.html">ACF</a>
+      
+    </li>
+  
+  <li class=" " data-id="athena-dependency_injection/ACFA" data-name="acfa">
+      <a href="../ACFA.html">ACFA</a>
+      
+    </li>
+  
+  <li class=" " data-id="athena-dependency_injection/ADI" data-name="adi">
+      <a href="../ADI.html">ADI</a>
+      
+    </li>
+  
+  <li class=" " data-id="athena-dependency_injection/ASPEC" data-name="aspec">
+      <a href="../ASPEC.html">ASPEC</a>
+      
+    </li>
+  
+  <li class="parent open current" data-id="athena-dependency_injection/Athena" data-name="athena">
+      <a href="../Athena.html">Athena</a>
+      
+        <ul>
+  
+  <li class="parent " data-id="athena-dependency_injection/Athena/Config" data-name="athena::config">
+      <a href="../Athena/Config.html">Config</a>
+      
+        <ul>
+  
+  <li class="parent " data-id="athena-dependency_injection/Athena/Config/AnnotationConfigurations" data-name="athena::config::annotationconfigurations">
+      <a href="../Athena/Config/AnnotationConfigurations.html">AnnotationConfigurations</a>
+      
+        <ul>
+  
+  <li class=" " data-id="athena-dependency_injection/Athena/Config/AnnotationConfigurations/AnnotationHash" data-name="athena::config::annotationconfigurations::annotationhash">
+      <a href="../Athena/Config/AnnotationConfigurations/AnnotationHash.html">AnnotationHash</a>
+      
+    </li>
+  
+  <li class=" " data-id="athena-dependency_injection/Athena/Config/AnnotationConfigurations/Classes" data-name="athena::config::annotationconfigurations::classes">
+      <a href="../Athena/Config/AnnotationConfigurations/Classes.html">Classes</a>
+      
+    </li>
+  
+  <li class=" " data-id="athena-dependency_injection/Athena/Config/AnnotationConfigurations/ConfigurationBase" data-name="athena::config::annotationconfigurations::configurationbase">
+      <a href="../Athena/Config/AnnotationConfigurations/ConfigurationBase.html">ConfigurationBase</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class="parent " data-id="athena-dependency_injection/Athena/Config/Annotations" data-name="athena::config::annotations">
+      <a href="../Athena/Config/Annotations.html">Annotations</a>
+      
+        <ul>
+  
+  <li class=" " data-id="athena-dependency_injection/Athena/Config/Annotations/Resolvable" data-name="athena::config::annotations::resolvable">
+      <a href="../Athena/Config/Annotations/Resolvable.html">Resolvable</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="athena-dependency_injection/Athena/Config/Base" data-name="athena::config::base">
+      <a href="../Athena/Config/Base.html">Base</a>
+      
+    </li>
+  
+  <li class=" " data-id="athena-dependency_injection/Athena/Config/ConfigurationResolver" data-name="athena::config::configurationresolver">
+      <a href="../Athena/Config/ConfigurationResolver.html">ConfigurationResolver</a>
+      
+    </li>
+  
+  <li class=" " data-id="athena-dependency_injection/Athena/Config/ConfigurationResolverInterface" data-name="athena::config::configurationresolverinterface">
+      <a href="../Athena/Config/ConfigurationResolverInterface.html">ConfigurationResolverInterface</a>
+      
+    </li>
+  
+  <li class=" " data-id="athena-dependency_injection/Athena/Config/Parameters" data-name="athena::config::parameters">
+      <a href="../Athena/Config/Parameters.html">Parameters</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class="parent open current" data-id="athena-dependency_injection/Athena/DependencyInjection" data-name="athena::dependencyinjection">
+      <a href="../Athena/DependencyInjection.html">DependencyInjection</a>
+      
+        <ul>
+  
+  <li class=" " data-id="athena-dependency_injection/Athena/DependencyInjection/Inject" data-name="athena::dependencyinjection::inject">
+      <a href="../Athena/DependencyInjection/Inject.html">Inject</a>
+      
+    </li>
+  
+  <li class=" " data-id="athena-dependency_injection/Athena/DependencyInjection/Proxy" data-name="athena::dependencyinjection::proxy(o)">
+      <a href="../Athena/DependencyInjection/Proxy.html">Proxy</a>
+      
+    </li>
+  
+  <li class=" " data-id="athena-dependency_injection/Athena/DependencyInjection/Register" data-name="athena::dependencyinjection::register">
+      <a href="../Athena/DependencyInjection/Register.html">Register</a>
+      
+    </li>
+  
+  <li class=" " data-id="athena-dependency_injection/Athena/DependencyInjection/ServiceContainer" data-name="athena::dependencyinjection::servicecontainer">
+      <a href="../Athena/DependencyInjection/ServiceContainer.html">ServiceContainer</a>
+      
+    </li>
+  
+  <li class="parent " data-id="athena-dependency_injection/Athena/DependencyInjection/Spec" data-name="athena::dependencyinjection::spec">
+      <a href="../Athena/DependencyInjection/Spec.html">Spec</a>
+      
+        <ul>
+  
+  <li class=" " data-id="athena-dependency_injection/Athena/DependencyInjection/Spec/MockableServiceContainer" data-name="athena::dependencyinjection::spec::mockableservicecontainer">
+      <a href="../Athena/DependencyInjection/Spec/MockableServiceContainer.html">MockableServiceContainer</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class="parent " data-id="athena-dependency_injection/Athena/Spec" data-name="athena::spec">
+      <a href="../Athena/Spec.html">Spec</a>
+      
+        <ul>
+  
+  <li class=" " data-id="athena-dependency_injection/Athena/Spec/Methods" data-name="athena::spec::methods">
+      <a href="../Athena/Spec/Methods.html">Methods</a>
+      
+    </li>
+  
+  <li class="parent " data-id="athena-dependency_injection/Athena/Spec/TestCase" data-name="athena::spec::testcase">
+      <a href="../Athena/Spec/TestCase.html">TestCase</a>
+      
+        <ul>
+  
+  <li class=" " data-id="athena-dependency_injection/Athena/Spec/TestCase/DataProvider" data-name="athena::spec::testcase::dataprovider">
+      <a href="../Athena/Spec/TestCase/DataProvider.html">DataProvider</a>
+      
+    </li>
+  
+  <li class=" " data-id="athena-dependency_injection/Athena/Spec/TestCase/Focus" data-name="athena::spec::testcase::focus">
+      <a href="../Athena/Spec/TestCase/Focus.html">Focus</a>
+      
+    </li>
+  
+  <li class=" " data-id="athena-dependency_injection/Athena/Spec/TestCase/Pending" data-name="athena::spec::testcase::pending">
+      <a href="../Athena/Spec/TestCase/Pending.html">Pending</a>
+      
+    </li>
+  
+  <li class=" " data-id="athena-dependency_injection/Athena/Spec/TestCase/Tags" data-name="athena::spec::testcase::tags">
+      <a href="../Athena/Spec/TestCase/Tags.html">Tags</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+</ul>
+
+  </div>
+</div>
+
+
+<div class="main-content">
+<h1 class="type-name">
+
+  <span class="kind">module</span> Athena::DependencyInjection
+
+</h1>
+
+
+
+
+
+  <h2>
+    <a id="overview" class="anchor" href="#overview">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Overview
+  </h2>
+
+  <p>Athena's Dependency Injection (DI) component, <code><a href="../ADI.html">ADI</a></code> for short, adds a service container layer to your project.  This allows useful objects, aka services, to be shared throughout the project.
+These objects live in a special class called the <code><a href="../Athena/DependencyInjection/ServiceContainer.html">ADI::ServiceContainer</a></code> (SC).</p>
+
+<p>The SC is lazily initialized on fibers; this allows the SC to be accessed anywhere within the project.  The <code><a href="../Athena/DependencyInjection.html#container:ADI::ServiceContainer-class-method">Athena::DependencyInjection.container</a></code> method will return the SC for the current fiber.
+Since the SC is defined on fibers, it allows for each fiber to have its own SC instance.  This can be useful for web frameworks as each request would have its own SC scoped to that request.</p>
+
+<ul><li>See <code><a href="../Athena/DependencyInjection/Register.html">ADI::Register</a></code> for documentation on registering services.</li></ul>
+
+<p><span class="flag purple">NOTE</span>  It is highly recommended to use interfaces as opposed to concrete types when defining the initializers for both services and non-services.
+Using interfaces allows changing the functionality of a type by just changing what service gets injected into it, such as via an alias.
+See this <a href="https://dev.to/blacksmoke16/dependency-injection-in-crystal-2d66#plug-and-play">blog post</a> for an example of this.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2>
+    <a id="defined-in" class="anchor" href="#defined-in">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Defined in:
+  </h2>
+  
+    
+      <a href="https://github.com/athena-framework/dependency-injection/blob/38ea4f122af6fba2138d527a5c93495ac7103389/src/athena-dependency_injection.cr#L27" target="_blank">
+        athena-dependency_injection.cr
+      </a>
+    
+    <br/>
+  
+    
+      <a href="https://github.com/athena-framework/dependency-injection/blob/38ea4f122af6fba2138d527a5c93495ac7103389/src/proxy.cr#L3" target="_blank">
+        proxy.cr
+      </a>
+    
+    <br/>
+  
+
+
+
+
+
+
+
+  <h2>
+    <a id="class-method-summary" class="anchor" href="#class-method-summary">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Class Method Summary
+  </h2>
+  <ul class="list-summary">
+    
+      <li class="entry-summary">
+        <a href="#container:ADI::ServiceContainer-class-method" class="signature"><strong>.container</strong> : ADI::ServiceContainer</a>
+        
+          <div class="summary"><p>Returns the <code><a href="../Athena/DependencyInjection/ServiceContainer.html">ADI::ServiceContainer</a></code> for the current fiber.</p></div>
+        
+      </li>
+    
+  </ul>
+
+
+
+
+
+  <h2>
+    <a id="macro-summary" class="anchor" href="#macro-summary">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Macro Summary
+  </h2>
+  <ul class="list-summary">
+    
+      <li class="entry-summary">
+        <a href="#auto_configure(type,options)-macro" class="signature"><strong>auto_configure</strong>(type, options)</a>
+        
+          <div class="summary"><p>Applies the provided <em>options</em> to any registered service of the provided <em>type</em>.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#bind(key,value)-macro" class="signature"><strong>bind</strong>(key, value)</a>
+        
+          <div class="summary"><p>Allows binding a <em>value</em> to a <em>key</em> in order to enable auto registration of that value.</p></div>
+        
+      </li>
+    
+  </ul>
+
+
+
+<div class="methods-inherited">
+  
+</div>
+
+
+
+
+  <h2>
+    <a id="class-method-detail" class="anchor" href="#class-method-detail">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Class Method Detail
+  </h2>
+  
+    <div class="entry-detail" id="container:ADI::ServiceContainer-class-method">
+      <div class="signature">
+        
+        def self.<strong>container</strong> : <a href="../Athena/DependencyInjection/ServiceContainer.html">ADI::ServiceContainer</a>
+
+        <a class="method-permalink" href="#container:ADI::ServiceContainer-class-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Returns the <code><a href="../Athena/DependencyInjection/ServiceContainer.html">ADI::ServiceContainer</a></code> for the current fiber.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/athena-framework/dependency-injection/blob/38ea4f122af6fba2138d527a5c93495ac7103389/src/athena-dependency_injection.cr#L609" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+
+
+
+
+
+  <h2>
+    <a id="macro-detail" class="anchor" href="#macro-detail">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Macro Detail
+  </h2>
+  
+    <div class="entry-detail" id="auto_configure(type,options)-macro">
+      <div class="signature">
+        
+        macro <strong>auto_configure</strong>(type, options)
+
+        <a class="method-permalink" href="#auto_configure(type,options)-macro">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Applies the provided <em>options</em> to any registered service of the provided <em>type</em>.</p>
+
+<p>A common use case of this would be to apply a specific tag to all instances of an interface; thus preventing the need to manually apply the tag for each implementation.
+This can be paired with <code><a href="../Athena/DependencyInjection.html#bind(key,value)-macro">Athena::DependencyInjection.bind</a></code> to make working with tags easier.</p>
+
+<h3><a id="example" class="anchor" href="#example">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>Example</h3>
+
+<pre><code class="language-crystal"><span class="k">module</span> <span class="t">ConfigInterface</span>; <span class="k">end</span>
+
+<span class="c"># Automatically apply the `&quot;config&quot;` tag to all instances of `ConfigInterface`.</span>
+<span class="t">ADI</span>.auto_configure <span class="t">ConfigInterface</span>, {tags: [<span class="s">&quot;config&quot;</span>]}
+
+@[<span class="t">ADI</span><span class="t">::</span><span class="t">Register</span>]
+record <span class="t">ConfigOne</span> <span class="k">do</span>
+  <span class="k">include</span> <span class="t">ConfigInterface</span>
+<span class="k">end</span>
+
+@[<span class="t">ADI</span><span class="t">::</span><span class="t">Register</span>]
+record <span class="t">ConfigTwo</span> <span class="k">do</span>
+  <span class="k">include</span> <span class="t">ConfigInterface</span>
+<span class="k">end</span>
+
+<span class="c"># Options supplied on the annotation itself override the auto configured options.</span>
+@[<span class="t">ADI</span><span class="t">::</span><span class="t">Register</span>(tags: <span class="o">[]</span> <span class="k">of</span> <span class="t">String</span>)]
+record <span class="t">ConfigThree</span> <span class="k">do</span>
+  <span class="k">include</span> <span class="t">ConfigInterface</span>
+<span class="k">end</span>
+
+@[<span class="t">ADI</span><span class="t">::</span><span class="t">Register</span>(_configs: <span class="s">&quot;!config&quot;</span>, public: <span class="n">true</span>)]
+record <span class="t">ConfigClient</span>, configs : <span class="t">Array</span>(<span class="t">ConfigInterface</span>)
+
+<span class="t">ADI</span>.container.config_client.configs <span class="c"># =&gt; [ConfigOne(), ConfigTwo()]</span></code></pre>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/athena-framework/dependency-injection/blob/38ea4f122af6fba2138d527a5c93495ac7103389/src/athena-dependency_injection.cr#L65" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="bind(key,value)-macro">
+      <div class="signature">
+        
+        macro <strong>bind</strong>(key, value)
+
+        <a class="method-permalink" href="#bind(key,value)-macro">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Allows binding a <em>value</em> to a <em>key</em> in order to enable auto registration of that value.</p>
+
+<p>Bindings allow scalar values, or those that could not otherwise be handled via <a href="./DependencyInjection/Register.html#aliasing-services">service aliases</a>, to be auto registered.
+This allows those arguments to be defined once and reused, as opposed to using named arguments to manually specify them for each service.</p>
+
+<p>Bindings can also be declared with a type restriction to allow taking the type restriction of the argument into account.
+Typed bindings are always checked first as the most specific type is always preferred.
+If no typed bindings match the argument's type, then the last defined untyped bindings is used.</p>
+
+<h3><a id="example" class="anchor" href="#example">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>Example</h3>
+
+<pre><code class="language-crystal"><span class="k">module</span> <span class="t">ValueInterface</span>; <span class="k">end</span>
+
+@[<span class="t">ADI</span><span class="t">::</span><span class="t">Register</span>(_value: <span class="n">1</span>, name: <span class="s">&quot;value_one&quot;</span>)]
+@[<span class="t">ADI</span><span class="t">::</span><span class="t">Register</span>(_value: <span class="n">2</span>, name: <span class="s">&quot;value_two&quot;</span>)]
+@[<span class="t">ADI</span><span class="t">::</span><span class="t">Register</span>(_value: <span class="n">3</span>, name: <span class="s">&quot;value_three&quot;</span>)]
+record <span class="t">ValueService</span>, value : <span class="t">Int32</span> <span class="k">do</span>
+  <span class="k">include</span> <span class="t">ValueInterface</span>
+<span class="k">end</span>
+
+<span class="c"># Untyped bindings</span>
+<span class="t">ADI</span>.bind api_key, <span class="t">ENV</span>[<span class="s">&quot;API_KEY&quot;</span>]
+<span class="t">ADI</span>.bind config, {id: <span class="n">12_i64</span>, active: <span class="n">true</span>}
+<span class="t">ADI</span>.bind static_value, <span class="n">123</span>
+<span class="t">ADI</span>.bind odd_values, [<span class="s">&quot;@value_one&quot;</span>, <span class="s">&quot;@value_three&quot;</span>]
+<span class="t">ADI</span>.bind value_arr, [<span class="n">true</span>, <span class="n">true</span>, <span class="n">false</span>]
+
+<span class="c"># Typed bindings</span>
+<span class="t">ADI</span>.bind value_arr : <span class="t">Array</span>(<span class="t">Int32</span>), [<span class="n">1</span>, <span class="n">2</span>, <span class="n">3</span>]
+<span class="t">ADI</span>.bind value_arr : <span class="t">Array</span>(<span class="t">Float64</span>), [<span class="n">1.0</span>, <span class="n">2.0</span>, <span class="n">3.0</span>]
+
+@[<span class="t">ADI</span><span class="t">::</span><span class="t">Register</span>(public: <span class="n">true</span>)]
+record <span class="t">BindingClient</span>,
+  api_key : <span class="t">String</span>,
+  config : <span class="t">NamedTuple</span>(id: <span class="t">Int64</span>, active: <span class="t">Bool</span>),
+  static_value : <span class="t">Int32</span>,
+  odd_values : <span class="t">Array</span>(<span class="t">ValueInterface</span>)
+
+@[<span class="t">ADI</span><span class="t">::</span><span class="t">Register</span>(public: <span class="n">true</span>)]
+record <span class="t">IntArr</span>, value_arr : <span class="t">Array</span>(<span class="t">Int32</span>)
+
+@[<span class="t">ADI</span><span class="t">::</span><span class="t">Register</span>(public: <span class="n">true</span>)]
+record <span class="t">FloatArr</span>, value_arr : <span class="t">Array</span>(<span class="t">Float64</span>)
+
+@[<span class="t">ADI</span><span class="t">::</span><span class="t">Register</span>(public: <span class="n">true</span>)]
+record <span class="t">BoolArr</span>, value_arr : <span class="t">Array</span>(<span class="t">Bool</span>)
+
+<span class="t">ADI</span>.container.binding_client <span class="c"># =&gt;</span>
+<span class="c"># BindingClient(</span>
+<span class="c">#  @api_key=&quot;123ABC&quot;,</span>
+<span class="c">#  @config={id: 12, active: true},</span>
+<span class="c">#  @static_value=123,</span>
+<span class="c">#  @odd_values=[ValueService(@value=1), ValueService(@value=3)])</span>
+
+<span class="t">ADI</span>.container.int_arr   <span class="c"># =&gt; IntArr(@value_arr=[1, 2, 3])</span>
+<span class="t">ADI</span>.container.float_arr <span class="c"># =&gt; FloatArr(@value_arr=[1.0, 2.0, 3.0])</span>
+<span class="t">ADI</span>.container.bool_arr  <span class="c"># =&gt; BoolArr(@value_arr=[true, true, false])</span></code></pre>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/athena-framework/dependency-injection/blob/38ea4f122af6fba2138d527a5c93495ac7103389/src/athena-dependency_injection.cr#L128" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+
+
+</div>
+
+</body>
+</html>

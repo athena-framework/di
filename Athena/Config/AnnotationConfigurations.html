@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="generator" content="Crystal Docs 0.35.1">
+<meta name="crystal_docs.project_version" content="master">
+<meta name="crystal_docs.project_name" content="athena-dependency_injection">
+
+
+
+<link href="../../css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../../js/doc.js"></script>
+
+  <meta name="repository-name" content="athena-dependency_injection">
+  <title>Athena::Config::AnnotationConfigurations - athena-dependency_injection master</title>
+  <script type="text/javascript">
+    CrystalDocs.base_path = "../../";
+  </script>
+</head>
+<body>
+
+<svg class="hidden">
+  <symbol id="octicon-link" viewBox="0 0 16 16">
+    <path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
+  </symbol>
+</svg>
+<div class="sidebar">
+  <div class="sidebar-header">
+    <div class="search-box">
+      <input type="search" class="search-input" placeholder="Search..." spellcheck="false" aria-label="Search">
+    </div>
+
+    <div class="project-summary">
+      <h1 class="project-name">
+        <a href="../../index.html">
+          athena-dependency_injection
+        </a>
+      </h1>
+
+      <span class="project-version">
+        master
+      </span>
+    </div>
+  </div>
+
+  <div class="search-results hidden">
+    <ul class="search-list"></ul>
+  </div>
+
+  <div class="types-list">
+    <ul>
+  
+  <li class=" " data-id="athena-dependency_injection/ACF" data-name="acf">
+      <a href="../../ACF.html">ACF</a>
+      
+    </li>
+  
+  <li class=" " data-id="athena-dependency_injection/ACFA" data-name="acfa">
+      <a href="../../ACFA.html">ACFA</a>
+      
+    </li>
+  
+  <li class=" " data-id="athena-dependency_injection/ADI" data-name="adi">
+      <a href="../../ADI.html">ADI</a>
+      
+    </li>
+  
+  <li class=" " data-id="athena-dependency_injection/ASPEC" data-name="aspec">
+      <a href="../../ASPEC.html">ASPEC</a>
+      
+    </li>
+  
+  <li class="parent open current" data-id="athena-dependency_injection/Athena" data-name="athena">
+      <a href="../../Athena.html">Athena</a>
+      
+        <ul>
+  
+  <li class="parent open current" data-id="athena-dependency_injection/Athena/Config" data-name="athena::config">
+      <a href="../../Athena/Config.html">Config</a>
+      
+        <ul>
+  
+  <li class="parent open current" data-id="athena-dependency_injection/Athena/Config/AnnotationConfigurations" data-name="athena::config::annotationconfigurations">
+      <a href="../../Athena/Config/AnnotationConfigurations.html">AnnotationConfigurations</a>
+      
+        <ul>
+  
+  <li class=" " data-id="athena-dependency_injection/Athena/Config/AnnotationConfigurations/AnnotationHash" data-name="athena::config::annotationconfigurations::annotationhash">
+      <a href="../../Athena/Config/AnnotationConfigurations/AnnotationHash.html">AnnotationHash</a>
+      
+    </li>
+  
+  <li class=" " data-id="athena-dependency_injection/Athena/Config/AnnotationConfigurations/Classes" data-name="athena::config::annotationconfigurations::classes">
+      <a href="../../Athena/Config/AnnotationConfigurations/Classes.html">Classes</a>
+      
+    </li>
+  
+  <li class=" " data-id="athena-dependency_injection/Athena/Config/AnnotationConfigurations/ConfigurationBase" data-name="athena::config::annotationconfigurations::configurationbase">
+      <a href="../../Athena/Config/AnnotationConfigurations/ConfigurationBase.html">ConfigurationBase</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class="parent " data-id="athena-dependency_injection/Athena/Config/Annotations" data-name="athena::config::annotations">
+      <a href="../../Athena/Config/Annotations.html">Annotations</a>
+      
+        <ul>
+  
+  <li class=" " data-id="athena-dependency_injection/Athena/Config/Annotations/Resolvable" data-name="athena::config::annotations::resolvable">
+      <a href="../../Athena/Config/Annotations/Resolvable.html">Resolvable</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="athena-dependency_injection/Athena/Config/Base" data-name="athena::config::base">
+      <a href="../../Athena/Config/Base.html">Base</a>
+      
+    </li>
+  
+  <li class=" " data-id="athena-dependency_injection/Athena/Config/ConfigurationResolver" data-name="athena::config::configurationresolver">
+      <a href="../../Athena/Config/ConfigurationResolver.html">ConfigurationResolver</a>
+      
+    </li>
+  
+  <li class=" " data-id="athena-dependency_injection/Athena/Config/ConfigurationResolverInterface" data-name="athena::config::configurationresolverinterface">
+      <a href="../../Athena/Config/ConfigurationResolverInterface.html">ConfigurationResolverInterface</a>
+      
+    </li>
+  
+  <li class=" " data-id="athena-dependency_injection/Athena/Config/Parameters" data-name="athena::config::parameters">
+      <a href="../../Athena/Config/Parameters.html">Parameters</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class="parent " data-id="athena-dependency_injection/Athena/DependencyInjection" data-name="athena::dependencyinjection">
+      <a href="../../Athena/DependencyInjection.html">DependencyInjection</a>
+      
+        <ul>
+  
+  <li class=" " data-id="athena-dependency_injection/Athena/DependencyInjection/Inject" data-name="athena::dependencyinjection::inject">
+      <a href="../../Athena/DependencyInjection/Inject.html">Inject</a>
+      
+    </li>
+  
+  <li class=" " data-id="athena-dependency_injection/Athena/DependencyInjection/Proxy" data-name="athena::dependencyinjection::proxy(o)">
+      <a href="../../Athena/DependencyInjection/Proxy.html">Proxy</a>
+      
+    </li>
+  
+  <li class=" " data-id="athena-dependency_injection/Athena/DependencyInjection/Register" data-name="athena::dependencyinjection::register">
+      <a href="../../Athena/DependencyInjection/Register.html">Register</a>
+      
+    </li>
+  
+  <li class=" " data-id="athena-dependency_injection/Athena/DependencyInjection/ServiceContainer" data-name="athena::dependencyinjection::servicecontainer">
+      <a href="../../Athena/DependencyInjection/ServiceContainer.html">ServiceContainer</a>
+      
+    </li>
+  
+  <li class="parent " data-id="athena-dependency_injection/Athena/DependencyInjection/Spec" data-name="athena::dependencyinjection::spec">
+      <a href="../../Athena/DependencyInjection/Spec.html">Spec</a>
+      
+        <ul>
+  
+  <li class=" " data-id="athena-dependency_injection/Athena/DependencyInjection/Spec/MockableServiceContainer" data-name="athena::dependencyinjection::spec::mockableservicecontainer">
+      <a href="../../Athena/DependencyInjection/Spec/MockableServiceContainer.html">MockableServiceContainer</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class="parent " data-id="athena-dependency_injection/Athena/Spec" data-name="athena::spec">
+      <a href="../../Athena/Spec.html">Spec</a>
+      
+        <ul>
+  
+  <li class=" " data-id="athena-dependency_injection/Athena/Spec/Methods" data-name="athena::spec::methods">
+      <a href="../../Athena/Spec/Methods.html">Methods</a>
+      
+    </li>
+  
+  <li class="parent " data-id="athena-dependency_injection/Athena/Spec/TestCase" data-name="athena::spec::testcase">
+      <a href="../../Athena/Spec/TestCase.html">TestCase</a>
+      
+        <ul>
+  
+  <li class=" " data-id="athena-dependency_injection/Athena/Spec/TestCase/DataProvider" data-name="athena::spec::testcase::dataprovider">
+      <a href="../../Athena/Spec/TestCase/DataProvider.html">DataProvider</a>
+      
+    </li>
+  
+  <li class=" " data-id="athena-dependency_injection/Athena/Spec/TestCase/Focus" data-name="athena::spec::testcase::focus">
+      <a href="../../Athena/Spec/TestCase/Focus.html">Focus</a>
+      
+    </li>
+  
+  <li class=" " data-id="athena-dependency_injection/Athena/Spec/TestCase/Pending" data-name="athena::spec::testcase::pending">
+      <a href="../../Athena/Spec/TestCase/Pending.html">Pending</a>
+      
+    </li>
+  
+  <li class=" " data-id="athena-dependency_injection/Athena/Spec/TestCase/Tags" data-name="athena::spec::testcase::tags">
+      <a href="../../Athena/Spec/TestCase/Tags.html">Tags</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+</ul>
+
+  </div>
+</div>
+
+
+<div class="main-content">
+<h1 class="type-name">
+
+  <span class="kind">struct</span> Athena::Config::AnnotationConfigurations
+
+</h1>
+
+
+  <ul class="superclass-hierarchy"><li class="superclass"><a href="../../Athena/Config/AnnotationConfigurations.html">Athena::Config::AnnotationConfigurations</a></li><li class="superclass">Struct</li><li class="superclass">Value</li><li class="superclass">Object</li></ul>
+
+
+
+
+  <h2>
+    <a id="overview" class="anchor" href="#overview">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Overview
+  </h2>
+
+  <p>Wraps a hash of configuration annotations applied to a given type, method, or instance variable.
+Provides the logic to access each annotation's configuration in a type safe manner.</p>
+
+<p>Implementations using this type must define the logic to provide the annotation hash manually;
+this would most likely just be something like:</p>
+
+<pre><code class="language-crystal"><span class="c"># Define a hash to store the configurations.</span>
+{% custom_configurations <span class="o">=</span> {} <span class="k">of</span> <span class="t">Nil</span> => <span class="t">Nil</span> %}
+
+<span class="c"># Iterate over the stored annotation classes.</span>
+{% <span class="k">for</span> ann_class <span class="k">in</span> <span class="t">ACF</span><span class="t">::</span><span class="t">CUSTOM_ANNOTATIONS</span> %}
+   {% ann_class <span class="o">=</span> ann_class.resolve %}
+
+   <span class="c"># Define an array to store the annotation configurations of this type.</span>
+   {% annotations <span class="o">=</span> <span class="o">[]</span> <span class="k">of</span> <span class="t">Nil</span> %}
+
+   <span class="c"># Iterate over each annotation of this type on the given type, method, or instance variable.</span>
+   {% <span class="k">for</span> ann <span class="k">in</span> type_method_instance_variable.annotations ann_class %}
+     <span class="c"># Add a new instance of the annotations configuration to the array.</span>
+     <span class="c"># Add the annotation&#39;s positional arguments first, if any, then named arguments.</span>
+     {% annotations <span class="o">&lt;&lt;</span> <span class="s">&quot;</span><span class="i">#{</span>ann_class<span class="i">}</span><span class="s">Configuration.new(</span><span class="i">#{</span>ann.args.empty? ? <span class="s">&quot;&quot;</span>.id : <span class="s">&quot;</span><span class="i">#{</span>ann.args.splat<span class="i">}</span><span class="s">,&quot;</span>.id<span class="i">}</span><span class="s"></span><span class="i">#{</span>ann.named_args.double_splat<span class="i">}</span><span class="s">)&quot;</span>.id %}
+   {% <span class="k">end</span> %}
+
+   <span class="c"># Update the configuration hash with the annotation class and configuration objects, but only if there was at least one.</span>
+   {% custom_configurations[ann_class] <span class="o">=</span> <span class="s">&quot;(</span><span class="i">#{</span>annotations<span class="i">}</span><span class="s"> of ACF::AnnotationConfigurations::ConfigurationBase)&quot;</span>.id <span class="k">unless</span> annotations.empty? %}
+ {% <span class="k">end</span> %}
+
+<span class="c"># ...</span>
+
+<span class="c"># Use the built hash to instantiate a new `ACF::AnnotationConfigurations` instance.</span>
+<span class="t">ACF</span><span class="t">::</span><span class="t">AnnotationConfigurations</span>.<span class="k">new</span>({{custom_configurations}} <span class="k">of</span> <span class="t">ACF</span><span class="t">::</span><span class="t">AnnotationConfigurations</span><span class="t">::</span><span class="t">Classes</span> => <span class="t">Array</span>(<span class="t">ACF</span><span class="t">::</span><span class="t">AnnotationConfigurations</span><span class="t">::</span><span class="t">ConfigurationBase</span>)),</code></pre>
+
+<p><span class="flag orange">TODO</span>  Centralize the hash resolution logic once <a href="https://github.com/crystal-lang/crystal/issues/8835">this issue</a> is resolved.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2>
+    <a id="defined-in" class="anchor" href="#defined-in">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Defined in:
+  </h2>
+  
+    
+      <a href="https://github.com/athena-framework/dependency-injection/blob/38ea4f122af6fba2138d527a5c93495ac7103389/lib/athena-config/src/annotation_configurations.cr#L37" target="_blank">
+        lib/athena-config/src/annotation_configurations.cr
+      </a>
+    
+    <br/>
+  
+
+
+
+
+
+  <h2>
+    <a id="constructors" class="anchor" href="#constructors">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Constructors
+  </h2>
+  <ul class="list-summary">
+    
+      <li class="entry-summary">
+        <a href="#new(annotation_hash:AnnotationHash=AnnotationHash.new)-class-method" class="signature"><strong>.new</strong>(annotation_hash : AnnotationHash = <span class="t">AnnotationHash</span>.<span class="k">new</span>)</a>
+        
+      </li>
+    
+  </ul>
+
+
+
+
+
+  <h2>
+    <a id="instance-method-summary" class="anchor" href="#instance-method-summary">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Instance Method Summary
+  </h2>
+  <ul class="list-summary">
+    
+      <li class="entry-summary">
+        <a href="#has?(ann_class:ACF::AnnotationConfigurations::Classes):Bool-instance-method" class="signature"><strong>#has?</strong>(ann_class : ACF::AnnotationConfigurations::Classes) : Bool</a>
+        
+          <div class="summary"><p>Returns <code>true</code> if there are annotations of the provided <em>ann_class</em>, otherwise <code>false</code>.</p></div>
+        
+      </li>
+    
+  </ul>
+
+
+
+
+
+<div class="methods-inherited">
+  
+    
+
+
+    
+
+
+    
+
+
+  
+    
+
+
+    
+
+
+    
+
+
+  
+    
+
+
+    
+
+
+    
+
+
+  
+</div>
+
+
+  <h2>
+    <a id="constructor-detail" class="anchor" href="#constructor-detail">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Constructor Detail
+  </h2>
+  
+    <div class="entry-detail" id="new(annotation_hash:AnnotationHash=AnnotationHash.new)-class-method">
+      <div class="signature">
+        
+        def self.<strong>new</strong>(annotation_hash : <a href="../../Athena/Config/AnnotationConfigurations/AnnotationHash.html">AnnotationHash</a> = <span class="t">AnnotationHash</span>.<span class="k">new</span>)
+
+        <a class="method-permalink" href="#new(annotation_hash:AnnotationHash=AnnotationHash.new)-class-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/athena-framework/dependency-injection/blob/38ea4f122af6fba2138d527a5c93495ac7103389/lib/athena-config/src/annotation_configurations.cr#L46" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+
+
+
+
+
+  <h2>
+    <a id="instance-method-detail" class="anchor" href="#instance-method-detail">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Instance Method Detail
+  </h2>
+  
+    <div class="entry-detail" id="has?(ann_class:ACF::AnnotationConfigurations::Classes):Bool-instance-method">
+      <div class="signature">
+        
+        def <strong>has?</strong>(ann_class : <a href="../../Athena/Config/AnnotationConfigurations/Classes.html">ACF::AnnotationConfigurations::Classes</a>) : Bool
+
+        <a class="method-permalink" href="#has?(ann_class:ACF::AnnotationConfigurations::Classes):Bool-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Returns <code>true</code> if there are annotations of the provided <em>ann_class</em>, otherwise <code>false</code>.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/athena-framework/dependency-injection/blob/38ea4f122af6fba2138d527a5c93495ac7103389/lib/athena-config/src/annotation_configurations.cr#L46" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+
+
+
+
+</div>
+
+</body>
+</html>

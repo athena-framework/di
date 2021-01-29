@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="generator" content="Crystal Docs 0.35.1">
+<meta name="crystal_docs.project_version" content="master">
+<meta name="crystal_docs.project_name" content="athena-dependency_injection">
+
+
+
+<link href="../../css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../../js/doc.js"></script>
+
+  <meta name="repository-name" content="athena-dependency_injection">
+  <title>Athena::DependencyInjection::Register - athena-dependency_injection master</title>
+  <script type="text/javascript">
+    CrystalDocs.base_path = "../../";
+  </script>
+</head>
+<body>
+
+<svg class="hidden">
+  <symbol id="octicon-link" viewBox="0 0 16 16">
+    <path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
+  </symbol>
+</svg>
+<div class="sidebar">
+  <div class="sidebar-header">
+    <div class="search-box">
+      <input type="search" class="search-input" placeholder="Search..." spellcheck="false" aria-label="Search">
+    </div>
+
+    <div class="project-summary">
+      <h1 class="project-name">
+        <a href="../../index.html">
+          athena-dependency_injection
+        </a>
+      </h1>
+
+      <span class="project-version">
+        master
+      </span>
+    </div>
+  </div>
+
+  <div class="search-results hidden">
+    <ul class="search-list"></ul>
+  </div>
+
+  <div class="types-list">
+    <ul>
+  
+  <li class=" " data-id="athena-dependency_injection/ACF" data-name="acf">
+      <a href="../../ACF.html">ACF</a>
+      
+    </li>
+  
+  <li class=" " data-id="athena-dependency_injection/ACFA" data-name="acfa">
+      <a href="../../ACFA.html">ACFA</a>
+      
+    </li>
+  
+  <li class=" " data-id="athena-dependency_injection/ADI" data-name="adi">
+      <a href="../../ADI.html">ADI</a>
+      
+    </li>
+  
+  <li class=" " data-id="athena-dependency_injection/ASPEC" data-name="aspec">
+      <a href="../../ASPEC.html">ASPEC</a>
+      
+    </li>
+  
+  <li class="parent open current" data-id="athena-dependency_injection/Athena" data-name="athena">
+      <a href="../../Athena.html">Athena</a>
+      
+        <ul>
+  
+  <li class="parent " data-id="athena-dependency_injection/Athena/Config" data-name="athena::config">
+      <a href="../../Athena/Config.html">Config</a>
+      
+        <ul>
+  
+  <li class="parent " data-id="athena-dependency_injection/Athena/Config/AnnotationConfigurations" data-name="athena::config::annotationconfigurations">
+      <a href="../../Athena/Config/AnnotationConfigurations.html">AnnotationConfigurations</a>
+      
+        <ul>
+  
+  <li class=" " data-id="athena-dependency_injection/Athena/Config/AnnotationConfigurations/AnnotationHash" data-name="athena::config::annotationconfigurations::annotationhash">
+      <a href="../../Athena/Config/AnnotationConfigurations/AnnotationHash.html">AnnotationHash</a>
+      
+    </li>
+  
+  <li class=" " data-id="athena-dependency_injection/Athena/Config/AnnotationConfigurations/Classes" data-name="athena::config::annotationconfigurations::classes">
+      <a href="../../Athena/Config/AnnotationConfigurations/Classes.html">Classes</a>
+      
+    </li>
+  
+  <li class=" " data-id="athena-dependency_injection/Athena/Config/AnnotationConfigurations/ConfigurationBase" data-name="athena::config::annotationconfigurations::configurationbase">
+      <a href="../../Athena/Config/AnnotationConfigurations/ConfigurationBase.html">ConfigurationBase</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class="parent " data-id="athena-dependency_injection/Athena/Config/Annotations" data-name="athena::config::annotations">
+      <a href="../../Athena/Config/Annotations.html">Annotations</a>
+      
+        <ul>
+  
+  <li class=" " data-id="athena-dependency_injection/Athena/Config/Annotations/Resolvable" data-name="athena::config::annotations::resolvable">
+      <a href="../../Athena/Config/Annotations/Resolvable.html">Resolvable</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="athena-dependency_injection/Athena/Config/Base" data-name="athena::config::base">
+      <a href="../../Athena/Config/Base.html">Base</a>
+      
+    </li>
+  
+  <li class=" " data-id="athena-dependency_injection/Athena/Config/ConfigurationResolver" data-name="athena::config::configurationresolver">
+      <a href="../../Athena/Config/ConfigurationResolver.html">ConfigurationResolver</a>
+      
+    </li>
+  
+  <li class=" " data-id="athena-dependency_injection/Athena/Config/ConfigurationResolverInterface" data-name="athena::config::configurationresolverinterface">
+      <a href="../../Athena/Config/ConfigurationResolverInterface.html">ConfigurationResolverInterface</a>
+      
+    </li>
+  
+  <li class=" " data-id="athena-dependency_injection/Athena/Config/Parameters" data-name="athena::config::parameters">
+      <a href="../../Athena/Config/Parameters.html">Parameters</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class="parent open current" data-id="athena-dependency_injection/Athena/DependencyInjection" data-name="athena::dependencyinjection">
+      <a href="../../Athena/DependencyInjection.html">DependencyInjection</a>
+      
+        <ul>
+  
+  <li class=" " data-id="athena-dependency_injection/Athena/DependencyInjection/Inject" data-name="athena::dependencyinjection::inject">
+      <a href="../../Athena/DependencyInjection/Inject.html">Inject</a>
+      
+    </li>
+  
+  <li class=" " data-id="athena-dependency_injection/Athena/DependencyInjection/Proxy" data-name="athena::dependencyinjection::proxy(o)">
+      <a href="../../Athena/DependencyInjection/Proxy.html">Proxy</a>
+      
+    </li>
+  
+  <li class=" current" data-id="athena-dependency_injection/Athena/DependencyInjection/Register" data-name="athena::dependencyinjection::register">
+      <a href="../../Athena/DependencyInjection/Register.html">Register</a>
+      
+    </li>
+  
+  <li class=" " data-id="athena-dependency_injection/Athena/DependencyInjection/ServiceContainer" data-name="athena::dependencyinjection::servicecontainer">
+      <a href="../../Athena/DependencyInjection/ServiceContainer.html">ServiceContainer</a>
+      
+    </li>
+  
+  <li class="parent " data-id="athena-dependency_injection/Athena/DependencyInjection/Spec" data-name="athena::dependencyinjection::spec">
+      <a href="../../Athena/DependencyInjection/Spec.html">Spec</a>
+      
+        <ul>
+  
+  <li class=" " data-id="athena-dependency_injection/Athena/DependencyInjection/Spec/MockableServiceContainer" data-name="athena::dependencyinjection::spec::mockableservicecontainer">
+      <a href="../../Athena/DependencyInjection/Spec/MockableServiceContainer.html">MockableServiceContainer</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class="parent " data-id="athena-dependency_injection/Athena/Spec" data-name="athena::spec">
+      <a href="../../Athena/Spec.html">Spec</a>
+      
+        <ul>
+  
+  <li class=" " data-id="athena-dependency_injection/Athena/Spec/Methods" data-name="athena::spec::methods">
+      <a href="../../Athena/Spec/Methods.html">Methods</a>
+      
+    </li>
+  
+  <li class="parent " data-id="athena-dependency_injection/Athena/Spec/TestCase" data-name="athena::spec::testcase">
+      <a href="../../Athena/Spec/TestCase.html">TestCase</a>
+      
+        <ul>
+  
+  <li class=" " data-id="athena-dependency_injection/Athena/Spec/TestCase/DataProvider" data-name="athena::spec::testcase::dataprovider">
+      <a href="../../Athena/Spec/TestCase/DataProvider.html">DataProvider</a>
+      
+    </li>
+  
+  <li class=" " data-id="athena-dependency_injection/Athena/Spec/TestCase/Focus" data-name="athena::spec::testcase::focus">
+      <a href="../../Athena/Spec/TestCase/Focus.html">Focus</a>
+      
+    </li>
+  
+  <li class=" " data-id="athena-dependency_injection/Athena/Spec/TestCase/Pending" data-name="athena::spec::testcase::pending">
+      <a href="../../Athena/Spec/TestCase/Pending.html">Pending</a>
+      
+    </li>
+  
+  <li class=" " data-id="athena-dependency_injection/Athena/Spec/TestCase/Tags" data-name="athena::spec::testcase::tags">
+      <a href="../../Athena/Spec/TestCase/Tags.html">Tags</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+</ul>
+
+  </div>
+</div>
+
+
+<div class="main-content">
+<h1 class="type-name">
+
+  <span class="kind">annotation</span> Athena::DependencyInjection::Register
+
+</h1>
+
+
+
+
+
+  <h2>
+    <a id="overview" class="anchor" href="#overview">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Overview
+  </h2>
+
+  <p>Registers a service based on the type the annotation is applied to.</p>
+
+<p>The type of the service affects how it behaves within the container.  When a <code>struct</code> service is retrieved or injected into a type, it will be a copy of the one in the SC (passed by value).
+This means that changes made to it in one type, will <em>NOT</em> be reflected in other types.  A <code>class</code> service on the other hand will be a reference to the one in the SC.  This allows it
+to share state between services.</p>
+
+<h2><a id="optional-arguments" class="anchor" href="#optional-arguments">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>Optional Arguments</h2>
+
+<p>In most cases, the annotation can be applied without additional arguments.  However, the annotation accepts a handful of optional arguments to fine tune how the service is registered.</p>
+
+<ul><li><code>name : String</code>- The name of the service.  Should be unique.  Defaults to the type's FQN snake cased.</li><li><code>public : Bool</code> - If the service should be directly accessible from the container.  Defaults to <code>false</code>.</li><li><code>public_alias : Bool</code> - If a service should be directly accessible from the container via an alias.  Defaults to <code>false</code>.</li><li><code>alias : T</code> - Injects <code>self</code> when this type is used as a type restriction.  See the Aliasing Services example for more information.</li><li><code>tags : Array(String | NamedTuple(name: String, priority: Int32?))</code> - Tags that should be assigned to the service.  Defaults to an empty array.  See the <a href="./Register.html#tagging-services">Tagging Services</a> example for more information.</li><li><code>type : T</code> - The type of the service within the container.  Defaults to service's types.  See the <a href="#customizing-services-type">Customizing Service's Type</a> section.</li><li><code>factory : String | Tuple(T, String)</code> - Use a factory type/method to create the service.  See the <a href="#factories">Factories</a> section.</li></ul>
+
+<h2><a id="examples" class="anchor" href="#examples">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>Examples</h2>
+
+<h3><a id="basic-usage" class="anchor" href="#basic-usage">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>Basic Usage</h3>
+
+<p>The simplest usage involves only applying the <code><a href="../../Athena/DependencyInjection/Register.html">ADI::Register</a></code> annotation to a type.  If the type does not have any arguments, then it is simply registered as a service as is.  If the type <em>does</em> have arguments, then an attempt is made to register the service by automatically resolving dependencies based on type restrictions.</p>
+
+<pre><code class="language-crystal">@[<span class="t">ADI</span><span class="t">::</span><span class="t">Register</span>]
+<span class="c"># Register a service without any dependencies.</span>
+<span class="k">struct</span> <span class="t">ShoutTransformer</span>
+  <span class="k">def</span> <span class="m">transform</span>(value : <span class="t">String</span>) : <span class="t">String</span>
+    value.upcase
+  <span class="k">end</span>
+<span class="k">end</span>
+
+@[<span class="t">ADI</span><span class="t">::</span><span class="t">Register</span>(public: <span class="n">true</span>)]
+<span class="c"># The ShoutTransformer is injected based on the type restriction of the `transformer` argument.</span>
+<span class="k">struct</span> <span class="t">SomeAPIClient</span>
+  <span class="k">def</span> <span class="m">initialize</span>(@transformer : <span class="t">ShoutTransformer</span>); <span class="k">end</span>
+
+  <span class="k">def</span> <span class="m">send</span>(message : <span class="t">String</span>)
+    message <span class="o">=</span> @transformer.transform message
+
+    <span class="c"># ...</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+
+<span class="t">ADI</span>.container.some_api_client.send <span class="s">&quot;foo&quot;</span> <span class="c"># =&gt; FOO</span></code></pre>
+
+<h3><a id="aliasing-services" class="anchor" href="#aliasing-services">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>Aliasing Services</h3>
+
+<p>An important part of DI is building against interfaces as opposed to concrete types.  This allows a type to depend upon abstractions rather than a specific implementation of the interface.
+Or in other words, prevents a singular implementation from being tightly coupled with another type.</p>
+
+<p>We can use the <code>alias</code> argument when registering a service to tell the container that it should inject this service when a type restriction for the aliased service is found.</p>
+
+<pre><code class="language-crystal"><span class="c"># Define an interface for our services to use.</span>
+<span class="k">module</span> <span class="t">TransformerInterface</span>
+  <span class="k">abstract</span> <span class="k">def</span> <span class="m">transform</span>(value : <span class="t">String</span>) : <span class="t">String</span>
+<span class="k">end</span>
+
+@[<span class="t">ADI</span><span class="t">::</span><span class="t">Register</span>(<span class="k">alias</span>: <span class="t">TransformerInterface</span>)]
+<span class="c"># Alias the `TransformerInterface` to this service.</span>
+<span class="k">struct</span> <span class="t">ShoutTransformer</span>
+  <span class="k">include</span> <span class="t">TransformerInterface</span>
+
+  <span class="k">def</span> <span class="m">transform</span>(value : <span class="t">String</span>) : <span class="t">String</span>
+    value.upcase
+  <span class="k">end</span>
+<span class="k">end</span>
+
+@[<span class="t">ADI</span><span class="t">::</span><span class="t">Register</span>]
+<span class="c"># Define another transformer type.</span>
+<span class="k">struct</span> <span class="t">ReverseTransformer</span>
+  <span class="k">include</span> <span class="t">TransformerInterface</span>
+
+  <span class="k">def</span> <span class="m">transform</span>(value : <span class="t">String</span>) : <span class="t">String</span>
+    value.reverse
+  <span class="k">end</span>
+<span class="k">end</span>
+
+@[<span class="t">ADI</span><span class="t">::</span><span class="t">Register</span>(public: <span class="n">true</span>)]
+<span class="c"># The `ShoutTransformer` is injected because the `TransformerInterface` is aliased to the `ShoutTransformer`.</span>
+<span class="k">struct</span> <span class="t">SomeAPIClient</span>
+  <span class="k">def</span> <span class="m">initialize</span>(@transformer : <span class="t">TransformerInterface</span>); <span class="k">end</span>
+
+  <span class="k">def</span> <span class="m">send</span>(message : <span class="t">String</span>)
+    message <span class="o">=</span> @transformer.transform message
+
+    <span class="c"># ...</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+
+<span class="t">ADI</span>.container.some_api_client.send <span class="s">&quot;foo&quot;</span> <span class="c"># =&gt; FOO</span></code></pre>
+
+<p>Any service that uses <code>TransformerInterface</code> as a dependency type restriction will get the <code>ShoutTransformer</code>.
+However, it is also possible to use a specific implementation while still building against the interface.  The name of the constructor argument is used in part to resolve the dependency.</p>
+
+<pre><code class="language-crystal">@[<span class="t">ADI</span><span class="t">::</span><span class="t">Register</span>(public: <span class="n">true</span>)]
+<span class="c"># The `ReverseTransformer` is injected because the constructor argument&#39;s name matches the service name of `ReverseTransformer`.</span>
+<span class="k">struct</span> <span class="t">SomeAPIClient</span>
+  <span class="k">def</span> <span class="m">initialize</span>(reverse_transformer : <span class="t">TransformerInterface</span>)
+    @transformer <span class="o">=</span> reverse_transformer
+  <span class="k">end</span>
+
+  <span class="k">def</span> <span class="m">send</span>(message : <span class="t">String</span>)
+    message <span class="o">=</span> @transformer.transform message
+
+    <span class="c"># ...</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+
+<span class="t">ADI</span>.container.some_api_client.send <span class="s">&quot;foo&quot;</span> <span class="c"># =&gt; oof</span></code></pre>
+
+<h3><a id="scalar-arguments" class="anchor" href="#scalar-arguments">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>Scalar Arguments</h3>
+
+<p>The auto registration logic as shown in previous examples only works on service dependencies.  Scalar arguments, such as Arrays, Strings, NamedTuples, etc, must be defined manually.
+This is achieved by using the argument's name prefixed with a <code>_</code> symbol as named arguments within the annotation.</p>
+
+<pre><code class="language-crystal">@[<span class="t">ADI</span><span class="t">::</span><span class="t">Register</span>(_shell: <span class="t">ENV</span>[<span class="s">&quot;SHELL&quot;</span>], _config: {id: <span class="n">12_i64</span>, active: <span class="n">true</span>}, public: <span class="n">true</span>)]
+<span class="k">struct</span> <span class="t">ScalarClient</span>
+  <span class="k">def</span> <span class="m">initialize</span>(@shell : <span class="t">String</span>, @config : <span class="t">NamedTuple</span>(id: <span class="t">Int64</span>, active: <span class="t">Bool</span>)); <span class="k">end</span>
+<span class="k">end</span>
+
+<span class="t">ADI</span>.container.scalar_client <span class="c"># =&gt; ScalarClient(@config={id: 12, active: true}, @shell=&quot;/bin/bash&quot;)</span></code></pre>
+
+<p>Arrays can also include references to services by prefixing the name of the service with an <code>@</code> symbol.</p>
+
+<pre><code class="language-crystal"><span class="k">module</span> <span class="t">Interface</span>; <span class="k">end</span>
+
+@[<span class="t">ADI</span><span class="t">::</span><span class="t">Register</span>]
+<span class="k">struct</span> <span class="t">One</span>
+  <span class="k">include</span> <span class="t">Interface</span>
+<span class="k">end</span>
+
+@[<span class="t">ADI</span><span class="t">::</span><span class="t">Register</span>]
+<span class="k">struct</span> <span class="t">Two</span>
+  <span class="k">include</span> <span class="t">Interface</span>
+<span class="k">end</span>
+
+@[<span class="t">ADI</span><span class="t">::</span><span class="t">Register</span>]
+<span class="k">struct</span> <span class="t">Three</span>
+  <span class="k">include</span> <span class="t">Interface</span>
+<span class="k">end</span>
+
+@[<span class="t">ADI</span><span class="t">::</span><span class="t">Register</span>(_services: [<span class="s">&quot;@one&quot;</span>, <span class="s">&quot;@three&quot;</span>], public: <span class="n">true</span>)]
+<span class="k">struct</span> <span class="t">ArrayClient</span>
+  <span class="k">def</span> <span class="m">initialize</span>(@services : <span class="t">Array</span>(<span class="t">Interface</span>)); <span class="k">end</span>
+<span class="k">end</span>
+
+<span class="t">ADI</span>.container.array_client <span class="c"># =&gt; ArrayClient(@services=[One(), Three()])</span></code></pre>
+
+<p>While scalar arguments cannot be auto registered by default, the <code><a href="../../Athena/DependencyInjection.html#bind(key,value)-macro">Athena::DependencyInjection.bind</a></code> macro can be used to support it.  For example: <code>ADI.bind shell, "bash"</code>.
+This would now inject the string <code>"bash"</code> whenever an argument named <code>shell</code> is encountered.</p>
+
+<h3><a id="tagging-services" class="anchor" href="#tagging-services">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>Tagging Services</h3>
+
+<p>Services can also be tagged.  Service tags allows another service to have all services with a specific tag injected as a dependency.
+A tag consists of a name, and additional metadata related to the tag.
+Currently the only supported metadata value is <code>priority</code>, which controls the order in which the services are injected; the higher the priority
+the sooner in the array it would be.  In the future support for custom tag metadata will be implemented.</p>
+
+<p>The <code><a href="../../Athena/DependencyInjection.html#auto_configure(type,options)-macro">Athena::DependencyInjection.auto_configure</a></code> macro may also be used to make working with tags easier.</p>
+
+<pre><code class="language-crystal"><span class="t">PARTNER_TAG</span> <span class="o">=</span> <span class="s">&quot;partner&quot;</span>
+
+@[<span class="t">ADI</span><span class="t">::</span><span class="t">Register</span>(_id: <span class="n">1</span>, name: <span class="s">&quot;google&quot;</span>, tags: [{name: <span class="t">PARTNER_TAG</span>, priority: <span class="n">5</span>}])]
+@[<span class="t">ADI</span><span class="t">::</span><span class="t">Register</span>(_id: <span class="n">2</span>, name: <span class="s">&quot;facebook&quot;</span>, tags: [<span class="t">PARTNER_TAG</span>])]
+@[<span class="t">ADI</span><span class="t">::</span><span class="t">Register</span>(_id: <span class="n">3</span>, name: <span class="s">&quot;yahoo&quot;</span>, tags: [{name: <span class="s">&quot;partner&quot;</span>, priority: <span class="n">10</span>}])]
+@[<span class="t">ADI</span><span class="t">::</span><span class="t">Register</span>(_id: <span class="n">4</span>, name: <span class="s">&quot;microsoft&quot;</span>, tags: [<span class="t">PARTNER_TAG</span>])]
+<span class="c"># Register multiple services based on the same type.  Each service must give define a unique name.</span>
+record <span class="t">FeedPartner</span>, id : <span class="t">Int32</span>
+
+@[<span class="t">ADI</span><span class="t">::</span><span class="t">Register</span>(_services: <span class="s">&quot;!partner&quot;</span>, public: <span class="n">true</span>)]
+<span class="c"># Inject all services with the `&quot;partner&quot;` tag into `self`.</span>
+<span class="k">class</span> <span class="t">PartnerClient</span>
+  <span class="k">def</span> <span class="m">initialize</span>(@services : <span class="t">Array</span>(<span class="t">FeedPartner</span>)); <span class="k">end</span>
+<span class="k">end</span>
+
+<span class="t">ADI</span>.container.partner_client <span class="c"># =&gt;</span>
+<span class="c"># #&lt;PartnerClient:0x7f43c0a1ae60</span>
+<span class="c">#  @services=</span>
+<span class="c">#   [FeedPartner(@id=3, @name=&quot;Yahoo&quot;),</span>
+<span class="c">#    FeedPartner(@id=1, @name=&quot;Google&quot;),</span>
+<span class="c">#    FeedPartner(@id=2, @name=&quot;Facebook&quot;),</span>
+<span class="c">#    FeedPartner(@id=4, @name=&quot;Microsoft&quot;)]&gt;</span></code></pre>
+
+<p>While tagged services cannot be injected automatically by default, the <code><a href="../../Athena/DependencyInjection.html#bind(key,value)-macro">Athena::DependencyInjection.bind</a></code> macro can be used to support it.  For example: <code>ADI.bind partners, "!partner"</code>.
+This would now inject all services with the <code>partner</code> tagged when an argument named <code>partners</code> is encountered.
+A type restriction can also be added to the binding to allow reusing the name.  See the documentation for <code><a href="../../Athena/DependencyInjection.html#bind(key,value)-macro">Athena::DependencyInjection.bind</a></code> for an example.</p>
+
+<h3><a id="service-proxies" class="anchor" href="#service-proxies">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>Service Proxies</h3>
+
+<p>In some cases, it may be a bit "heavy" to instantiate a service that may only be used occasionally.
+To solve this, a proxy of the service could be injected instead.
+The instantiation of proxied services are deferred until a method is called on it.</p>
+
+<p>A service is proxied by changing the type signature of the service to be of the <code><a href="../../Athena/DependencyInjection/Proxy.html">ADI::Proxy</a>(T)</code> type, where <code>T</code> is the service to be proxied.</p>
+
+<pre><code class="language-crystal">@[<span class="t">ADI</span><span class="t">::</span><span class="t">Register</span>]
+<span class="k">class</span> <span class="t">ServiceTwo</span>
+  getter value <span class="o">=</span> <span class="n">123</span>
+
+  <span class="k">def</span> <span class="m">initialize</span>
+    pp <span class="s">&quot;new s2&quot;</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+
+@[<span class="t">ADI</span><span class="t">::</span><span class="t">Register</span>(public: <span class="n">true</span>)]
+<span class="k">class</span> <span class="t">ServiceOne</span>
+  getter service_two : <span class="t">ADI</span><span class="t">::</span><span class="t">Proxy</span>(<span class="t">ServiceTwo</span>)
+
+  <span class="c"># Tells `ADI` that a proxy of `ServiceTwo` should be injected.</span>
+  <span class="k">def</span> <span class="m">initialize</span>(@service_two : <span class="t">ADI</span><span class="t">::</span><span class="t">Proxy</span>(<span class="t">ServiceTwo</span>))
+    pp <span class="s">&quot;new s1&quot;</span>
+  <span class="k">end</span>
+
+  <span class="k">def</span> <span class="m">run</span>
+    <span class="c"># At this point service_two hasn&#39;t been initialized yet.</span>
+    pp <span class="s">&quot;before value&quot;</span>
+
+    <span class="c"># First method interaction with the proxy instantiates the service and forwards the method to it.</span>
+    pp @service_two.value
+  <span class="k">end</span>
+<span class="k">end</span>
+
+<span class="t">ADI</span>.container.service_one.run
+<span class="c"># &quot;new s1&quot;</span>
+<span class="c"># &quot;before value&quot;</span>
+<span class="c"># &quot;new s2&quot;</span>
+<span class="c"># 123</span></code></pre>
+
+<h4><a id="tagged-services-proxies" class="anchor" href="#tagged-services-proxies">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>Tagged Services Proxies</h4>
+
+<p>Tagged services may also be injected as an array of proxy objects.
+This can be useful as an easy way to manage a collection of services where only one (or a small amount) will be used at a time.</p>
+
+<pre><code class="language-crystal">@[<span class="t">ADI</span><span class="t">::</span><span class="t">Register</span>(_services: <span class="s">&quot;!some_tag&quot;</span>)]
+<span class="k">class</span> <span class="t">SomeService</span>
+  <span class="k">def</span> <span class="m">initialize</span>(@services : <span class="t">Array</span>(<span class="t">ADI</span><span class="t">::</span><span class="t">Proxy</span>(<span class="t">ServiceType</span>)))
+  <span class="k">end</span>
+<span class="k">end</span></code></pre>
+
+<h4><a id="proxy-metadata" class="anchor" href="#proxy-metadata">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>Proxy Metadata</h4>
+
+<p>The <code><a href="../../Athena/DependencyInjection/Proxy.html">ADI::Proxy</a></code> object also exposes some metadata related to the proxied object; such as its name, type, and if it has been instantiated yet.</p>
+
+<p>For example, using <code>ServiceTwo</code>:</p>
+
+<pre><code class="language-crystal"><span class="c"># Assume this returns a `ADI::Proxy(ServiceTwo)`.</span>
+proxy <span class="o">=</span> <span class="t">ADI</span>.container.service_two
+
+proxy.service_id    <span class="c"># =&gt; &quot;service_two&quot;</span>
+proxy.service_type  <span class="c"># =&gt; ServiceTwo</span>
+proxy.instantiated? <span class="c"># =&gt; false</span>
+proxy.value         <span class="c"># =&gt; 123</span>
+proxy.instantiated? <span class="c"># =&gt; true</span></code></pre>
+
+<h3><a id="parameters" class="anchor" href="#parameters">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>Parameters</h3>
+
+<p>The <code><a href="../../Athena/Config.html">Athena::Config</a></code> component provides a way to manage <code><a href="../../Athena/Config/Parameters.html">ACF::Parameters</a></code>.
+It is possible to inject these parameters directly into services in a type safe way.</p>
+
+<p>Parameter injection utilizes a specially formatted string, similar to tagged services.
+The parameter name should be a string starting and ending with a <code>%</code>, e.g. <code>"%app.database.username%"</code>.
+The value within the <code>%</code> represents the "path" to the parameter from the <code><a href="../../Athena/Config/Parameters.html">ACF::Parameters</a></code> base type.</p>
+
+<p>Parameters may be supplied either via <code><a href="../../Athena/DependencyInjection.html#bind(key,value)-macro">Athena::DependencyInjection.bind</a></code> or an explicit service argument.</p>
+
+<pre><code class="language-crystal"><span class="k">struct</span> <span class="t">DatabaseConfig</span>
+  getter username : <span class="t">String</span> <span class="o">=</span> <span class="s">&quot;USERNAME&quot;</span>
+<span class="k">end</span>
+
+<span class="k">struct</span> <span class="t">AppConfig</span>
+  getter name : <span class="t">String</span> <span class="o">=</span> <span class="s">&quot;My App&quot;</span>
+  getter database : <span class="t">DatabaseConfig</span> <span class="o">=</span> <span class="t">DatabaseConfig</span>.<span class="k">new</span>
+<span class="k">end</span>
+
+<span class="k">class</span> <span class="t">Athena</span><span class="t">::</span><span class="t">Config</span><span class="t">::</span><span class="t">Parameters</span>
+  getter app : <span class="t">AppConfig</span> <span class="o">=</span> <span class="t">AppConfig</span>.<span class="k">new</span>
+<span class="k">end</span>
+
+<span class="t">ADI</span>.bind db_username, <span class="s">&quot;%app.database.username%&quot;</span>
+
+@[<span class="t">ADI</span><span class="t">::</span><span class="t">Register</span>(_app_name: <span class="s">&quot;%app.name%&quot;</span>, public: <span class="n">true</span>)]
+record <span class="t">SomeService</span>, app_name : <span class="t">String</span>, db_username : <span class="t">String</span>
+
+service <span class="o">=</span> <span class="t">ADI</span>.container.some_service
+service.app_name    <span class="c"># =&gt; &quot;My App&quot;</span>
+service.db_username <span class="c"># =&gt; &quot;USERNAME&quot;</span></code></pre>
+
+<h3><a id="optional-services" class="anchor" href="#optional-services">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>Optional Services</h3>
+
+<p>Services defined with a nillable type restriction are considered to be optional.  If no service could be resolved from the type, then <code>nil</code> is injected instead.
+Similarly, if the argument has a default value, that value would be used instead.</p>
+
+<pre><code class="language-crystal"><span class="k">struct</span> <span class="t">OptionalMissingService</span>
+<span class="k">end</span>
+
+@[<span class="t">ADI</span><span class="t">::</span><span class="t">Register</span>]
+<span class="k">struct</span> <span class="t">OptionalExistingService</span>
+<span class="k">end</span>
+
+@[<span class="t">ADI</span><span class="t">::</span><span class="t">Register</span>(public: <span class="n">true</span>)]
+<span class="k">class</span> <span class="t">OptionalClient</span>
+  getter service_missing, service_existing, service_default
+
+  <span class="k">def</span> <span class="m">initialize</span>(
+    @service_missing : <span class="t">OptionalMissingService</span>?,
+    @service_existing : <span class="t">OptionalExistingService</span>?,
+    @service_default : <span class="t">OptionalMissingService</span> <span class="o">|</span> <span class="t">Int32</span> <span class="o">|</span> <span class="t">Nil</span> <span class="o">=</span> <span class="n">12</span>
+  ); <span class="k">end</span>
+<span class="k">end</span>
+
+<span class="t">ADI</span>.container.optional_client
+<span class="c"># #&lt;OptionalClient:0x7fe7de7cdf40</span>
+<span class="c">#  @service_default=12,</span>
+<span class="c">#  @service_existing=OptionalExistingService(),</span>
+<span class="c">#  @service_missing=nil&gt;</span></code></pre>
+
+<h3><a id="generic-services" class="anchor" href="#generic-services">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>Generic Services</h3>
+
+<p>Generic arguments can be provided as positional arguments within the <code><a href="../../Athena/DependencyInjection/Register.html">ADI::Register</a></code> annotation.</p>
+
+<p><span class="flag purple">NOTE</span>  Services based on generic types <em>MUST</em> explicitly provide a name via the <code>name</code> field within the <code><a href="../../Athena/DependencyInjection/Register.html">ADI::Register</a></code> annotation
+since there wouldn't be a way to tell them apart from the class name alone.</p>
+
+<pre><code class="language-crystal">@[<span class="t">ADI</span><span class="t">::</span><span class="t">Register</span>(<span class="t">Int32</span>, <span class="t">Bool</span>, name: <span class="s">&quot;int_service&quot;</span>, public: <span class="n">true</span>)]
+@[<span class="t">ADI</span><span class="t">::</span><span class="t">Register</span>(<span class="t">Float64</span>, <span class="t">Bool</span>, name: <span class="s">&quot;float_service&quot;</span>, public: <span class="n">true</span>)]
+<span class="k">struct</span> <span class="t">GenericService</span>(<span class="t">T</span>, <span class="t">B</span>)
+  <span class="k">def</span> <span class="m">type</span>
+    {<span class="t">T</span>, <span class="t">B</span>}
+  <span class="k">end</span>
+<span class="k">end</span>
+
+<span class="t">ADI</span>.container.int_service.<span class="k">type</span>   <span class="c"># =&gt; {Int32, Bool}</span>
+<span class="t">ADI</span>.container.float_service.<span class="k">type</span> <span class="c"># =&gt; {Float64, Bool}</span></code></pre>
+
+<h3><a id="factories" class="anchor" href="#factories">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>Factories</h3>
+
+<p>In some cases it may be necessary to use the <a href="https://en.wikipedia.org/wiki/Factory_%28object-oriented_programming%29">factory design pattern</a>
+to handle creating an object as opposed to creating the object directly.  In this case the <code>factory</code> argument can be used.</p>
+
+<p>Factory methods are class methods defined on some type; either the service itself or a different type.
+Arguments to the factory method are provided as they would if the service was being created directly.
+This includes auto resolved service dependencies, and scalar underscore based arguments included within the <code><a href="../../Athena/DependencyInjection/Register.html">ADI::Register</a></code> annotation.</p>
+
+<h4><a id="same-type" class="anchor" href="#same-type">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>Same Type</h4>
+
+<p>A <code>String</code> <code>factory</code> value denotes the method name that should be called on the service itself to create the service.</p>
+
+<pre><code class="language-crystal"><span class="c"># Calls `StringFactoryService.double` to create the service.</span>
+@[<span class="t">ADI</span><span class="t">::</span><span class="t">Register</span>(_value: <span class="n">10</span>, public: <span class="n">true</span>, factory: <span class="s">&quot;double&quot;</span>)]
+<span class="k">class</span> <span class="t">StringFactoryService</span>
+  getter value : <span class="t">Int32</span>
+
+  <span class="k">def</span> <span class="m">self</span>.double(value : <span class="t">Int32</span>) : <span class="k">self</span>
+    <span class="k">new</span> value <span class="o">*</span> <span class="n">2</span>
+  <span class="k">end</span>
+
+  <span class="k">def</span> <span class="m">initialize</span>(@value : <span class="t">Int32</span>); <span class="k">end</span>
+<span class="k">end</span>
+
+<span class="t">ADI</span>.container.string_factory_service.value <span class="c"># =&gt; 20</span></code></pre>
+
+<h4><a id="different-type" class="anchor" href="#different-type">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>Different Type</h4>
+
+<p>A <code>Tuple</code> can also be provided as the <code>factory</code> value to allow using an external type's factory method to create the service.
+The first item represents the factory type to use, and the second item represents the method that should be called.</p>
+
+<pre><code class="language-crystal"><span class="k">class</span> <span class="t">TestFactory</span>
+  <span class="k">def</span> <span class="m">self</span>.create_tuple_service(value : <span class="t">Int32</span>) : <span class="t">TupleFactoryService</span>
+    <span class="t">TupleFactoryService</span>.<span class="k">new</span> value <span class="o">*</span> <span class="n">3</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+
+<span class="c"># Calls `TestFactory.create_tuple_service` to create the service.</span>
+@[<span class="t">ADI</span><span class="t">::</span><span class="t">Register</span>(_value: <span class="n">10</span>, public: <span class="n">true</span>, factory: {<span class="t">TestFactory</span>, <span class="s">&quot;create_tuple_service&quot;</span>})]
+<span class="k">class</span> <span class="t">TupleFactoryService</span>
+  getter value : <span class="t">Int32</span>
+
+  <span class="k">def</span> <span class="m">initialize</span>(@value : <span class="t">Int32</span>); <span class="k">end</span>
+<span class="k">end</span>
+
+<span class="t">ADI</span>.container.tuple_factory_service.value <span class="c"># =&gt; 30</span></code></pre>
+
+<h3><a id="customizing-services-type" class="anchor" href="#customizing-services-type">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>Customizing Service's Type</h3>
+
+<p>By default when a service is registered, it is typed the same as the service, for example:</p>
+
+<pre><code class="language-crystal">@[<span class="t">ADI</span><span class="t">::</span><span class="t">Register</span>]
+<span class="k">class</span> <span class="t">MyService</span>; <span class="k">end</span></code></pre>
+
+<p>This service is essentially represented in the service container as <code>@my_service : MyService</code>.
+This is usually fine for most services, however there are some cases where the service's type should not be the concrete implementation.
+An example of this is if that service should be mockable in a test setting.  Mockable services should be typed to an interface that they implement
+in order to allow mock implementations to be used if needed.</p>
+
+<pre><code class="language-crystal"><span class="k">module</span> <span class="t">SomeInterface</span>; <span class="k">end</span>
+
+@[<span class="t">ADI</span><span class="t">::</span><span class="t">Register</span>(<span class="k">type</span>: <span class="t">SomeInterface</span>)]
+<span class="k">class</span> <span class="t">MyService</span>
+  <span class="k">include</span> <span class="t">SomeInterface</span>
+<span class="k">end</span></code></pre>
+
+<p>By specifying the <code>type</code> as <code>SomeInterface</code>, this changes the services representation in the service container to <code>@my_service : SomeInterface</code>,
+thus allowing the exact implementation to be changed.  See <code><a href="../../Athena/DependencyInjection/Spec/MockableServiceContainer.html">ADI::Spec::MockableServiceContainer</a></code> for more details.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2>
+    <a id="defined-in" class="anchor" href="#defined-in">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Defined in:
+  </h2>
+  
+    
+      <a href="https://github.com/athena-framework/dependency-injection/blob/38ea4f122af6fba2138d527a5c93495ac7103389/src/athena-dependency_injection.cr#L582" target="_blank">
+        athena-dependency_injection.cr
+      </a>
+    
+    <br/>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="methods-inherited">
+  
+</div>
+
+
+
+
+
+
+
+
+
+</div>
+
+</body>
+</html>

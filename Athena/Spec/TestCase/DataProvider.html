@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="generator" content="Crystal Docs 0.35.1">
+<meta name="crystal_docs.project_version" content="master">
+<meta name="crystal_docs.project_name" content="athena-dependency_injection">
+
+
+
+<link href="../../../css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../../../js/doc.js"></script>
+
+  <meta name="repository-name" content="athena-dependency_injection">
+  <title>Athena::Spec::TestCase::DataProvider - athena-dependency_injection master</title>
+  <script type="text/javascript">
+    CrystalDocs.base_path = "../../../";
+  </script>
+</head>
+<body>
+
+<svg class="hidden">
+  <symbol id="octicon-link" viewBox="0 0 16 16">
+    <path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
+  </symbol>
+</svg>
+<div class="sidebar">
+  <div class="sidebar-header">
+    <div class="search-box">
+      <input type="search" class="search-input" placeholder="Search..." spellcheck="false" aria-label="Search">
+    </div>
+
+    <div class="project-summary">
+      <h1 class="project-name">
+        <a href="../../../index.html">
+          athena-dependency_injection
+        </a>
+      </h1>
+
+      <span class="project-version">
+        master
+      </span>
+    </div>
+  </div>
+
+  <div class="search-results hidden">
+    <ul class="search-list"></ul>
+  </div>
+
+  <div class="types-list">
+    <ul>
+  
+  <li class=" " data-id="athena-dependency_injection/ACF" data-name="acf">
+      <a href="../../../ACF.html">ACF</a>
+      
+    </li>
+  
+  <li class=" " data-id="athena-dependency_injection/ACFA" data-name="acfa">
+      <a href="../../../ACFA.html">ACFA</a>
+      
+    </li>
+  
+  <li class=" " data-id="athena-dependency_injection/ADI" data-name="adi">
+      <a href="../../../ADI.html">ADI</a>
+      
+    </li>
+  
+  <li class=" " data-id="athena-dependency_injection/ASPEC" data-name="aspec">
+      <a href="../../../ASPEC.html">ASPEC</a>
+      
+    </li>
+  
+  <li class="parent open current" data-id="athena-dependency_injection/Athena" data-name="athena">
+      <a href="../../../Athena.html">Athena</a>
+      
+        <ul>
+  
+  <li class="parent " data-id="athena-dependency_injection/Athena/Config" data-name="athena::config">
+      <a href="../../../Athena/Config.html">Config</a>
+      
+        <ul>
+  
+  <li class="parent " data-id="athena-dependency_injection/Athena/Config/AnnotationConfigurations" data-name="athena::config::annotationconfigurations">
+      <a href="../../../Athena/Config/AnnotationConfigurations.html">AnnotationConfigurations</a>
+      
+        <ul>
+  
+  <li class=" " data-id="athena-dependency_injection/Athena/Config/AnnotationConfigurations/AnnotationHash" data-name="athena::config::annotationconfigurations::annotationhash">
+      <a href="../../../Athena/Config/AnnotationConfigurations/AnnotationHash.html">AnnotationHash</a>
+      
+    </li>
+  
+  <li class=" " data-id="athena-dependency_injection/Athena/Config/AnnotationConfigurations/Classes" data-name="athena::config::annotationconfigurations::classes">
+      <a href="../../../Athena/Config/AnnotationConfigurations/Classes.html">Classes</a>
+      
+    </li>
+  
+  <li class=" " data-id="athena-dependency_injection/Athena/Config/AnnotationConfigurations/ConfigurationBase" data-name="athena::config::annotationconfigurations::configurationbase">
+      <a href="../../../Athena/Config/AnnotationConfigurations/ConfigurationBase.html">ConfigurationBase</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class="parent " data-id="athena-dependency_injection/Athena/Config/Annotations" data-name="athena::config::annotations">
+      <a href="../../../Athena/Config/Annotations.html">Annotations</a>
+      
+        <ul>
+  
+  <li class=" " data-id="athena-dependency_injection/Athena/Config/Annotations/Resolvable" data-name="athena::config::annotations::resolvable">
+      <a href="../../../Athena/Config/Annotations/Resolvable.html">Resolvable</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="athena-dependency_injection/Athena/Config/Base" data-name="athena::config::base">
+      <a href="../../../Athena/Config/Base.html">Base</a>
+      
+    </li>
+  
+  <li class=" " data-id="athena-dependency_injection/Athena/Config/ConfigurationResolver" data-name="athena::config::configurationresolver">
+      <a href="../../../Athena/Config/ConfigurationResolver.html">ConfigurationResolver</a>
+      
+    </li>
+  
+  <li class=" " data-id="athena-dependency_injection/Athena/Config/ConfigurationResolverInterface" data-name="athena::config::configurationresolverinterface">
+      <a href="../../../Athena/Config/ConfigurationResolverInterface.html">ConfigurationResolverInterface</a>
+      
+    </li>
+  
+  <li class=" " data-id="athena-dependency_injection/Athena/Config/Parameters" data-name="athena::config::parameters">
+      <a href="../../../Athena/Config/Parameters.html">Parameters</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class="parent " data-id="athena-dependency_injection/Athena/DependencyInjection" data-name="athena::dependencyinjection">
+      <a href="../../../Athena/DependencyInjection.html">DependencyInjection</a>
+      
+        <ul>
+  
+  <li class=" " data-id="athena-dependency_injection/Athena/DependencyInjection/Inject" data-name="athena::dependencyinjection::inject">
+      <a href="../../../Athena/DependencyInjection/Inject.html">Inject</a>
+      
+    </li>
+  
+  <li class=" " data-id="athena-dependency_injection/Athena/DependencyInjection/Proxy" data-name="athena::dependencyinjection::proxy(o)">
+      <a href="../../../Athena/DependencyInjection/Proxy.html">Proxy</a>
+      
+    </li>
+  
+  <li class=" " data-id="athena-dependency_injection/Athena/DependencyInjection/Register" data-name="athena::dependencyinjection::register">
+      <a href="../../../Athena/DependencyInjection/Register.html">Register</a>
+      
+    </li>
+  
+  <li class=" " data-id="athena-dependency_injection/Athena/DependencyInjection/ServiceContainer" data-name="athena::dependencyinjection::servicecontainer">
+      <a href="../../../Athena/DependencyInjection/ServiceContainer.html">ServiceContainer</a>
+      
+    </li>
+  
+  <li class="parent " data-id="athena-dependency_injection/Athena/DependencyInjection/Spec" data-name="athena::dependencyinjection::spec">
+      <a href="../../../Athena/DependencyInjection/Spec.html">Spec</a>
+      
+        <ul>
+  
+  <li class=" " data-id="athena-dependency_injection/Athena/DependencyInjection/Spec/MockableServiceContainer" data-name="athena::dependencyinjection::spec::mockableservicecontainer">
+      <a href="../../../Athena/DependencyInjection/Spec/MockableServiceContainer.html">MockableServiceContainer</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class="parent open current" data-id="athena-dependency_injection/Athena/Spec" data-name="athena::spec">
+      <a href="../../../Athena/Spec.html">Spec</a>
+      
+        <ul>
+  
+  <li class=" " data-id="athena-dependency_injection/Athena/Spec/Methods" data-name="athena::spec::methods">
+      <a href="../../../Athena/Spec/Methods.html">Methods</a>
+      
+    </li>
+  
+  <li class="parent open current" data-id="athena-dependency_injection/Athena/Spec/TestCase" data-name="athena::spec::testcase">
+      <a href="../../../Athena/Spec/TestCase.html">TestCase</a>
+      
+        <ul>
+  
+  <li class=" current" data-id="athena-dependency_injection/Athena/Spec/TestCase/DataProvider" data-name="athena::spec::testcase::dataprovider">
+      <a href="../../../Athena/Spec/TestCase/DataProvider.html">DataProvider</a>
+      
+    </li>
+  
+  <li class=" " data-id="athena-dependency_injection/Athena/Spec/TestCase/Focus" data-name="athena::spec::testcase::focus">
+      <a href="../../../Athena/Spec/TestCase/Focus.html">Focus</a>
+      
+    </li>
+  
+  <li class=" " data-id="athena-dependency_injection/Athena/Spec/TestCase/Pending" data-name="athena::spec::testcase::pending">
+      <a href="../../../Athena/Spec/TestCase/Pending.html">Pending</a>
+      
+    </li>
+  
+  <li class=" " data-id="athena-dependency_injection/Athena/Spec/TestCase/Tags" data-name="athena::spec::testcase::tags">
+      <a href="../../../Athena/Spec/TestCase/Tags.html">Tags</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+</ul>
+
+  </div>
+</div>
+
+
+<div class="main-content">
+<h1 class="type-name">
+
+  <span class="kind">annotation</span> Athena::Spec::TestCase::DataProvider
+
+</h1>
+
+
+
+
+
+  <h2>
+    <a id="overview" class="anchor" href="#overview">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Overview
+  </h2>
+
+  <p>Tests can be defined with arbitrary arguments.  These arguments are provided by one or more <code><a href="../../../Athena/Spec/TestCase/DataProvider.html">DataProvider</a></code>.</p>
+
+<p>A data provider is a method that returns either a <code>Hash</code>, <code>NamedTuple</code>, <code>Array</code>, or <code>Tuple</code>.</p>
+
+<p><span class="flag purple">NOTE</span>  The method's return type must be set to one of those types.</p>
+
+<p>If the return type is a <code>Hash</code> or <code>NamedTuple</code> then it is a keyed provider;
+the key will be used as part of the description for each test.</p>
+
+<p>If the return type is an <code>Array</code> or <code>Tuple</code> it is considered a keyless provider;
+the index will be used as part of the description for each test.</p>
+
+<p><span class="flag purple">NOTE</span>  In both cases the value must be a <code>Tuple</code>; the values should be an ordered list of the arguments you want to provide to the test.</p>
+
+<p>One or more <code><a href="../../../Athena/Spec/TestCase/DataProvider.html">DataProvider</a></code> annotations can be applied to a test
+with a positional argument of the name of the providing methods.
+An <code>it</code> block will be defined for each "set" of data.</p>
+
+<p>Data providers can be a very powerful tool when combined with inheritance and <code>abstract def</code>s.
+A parent test case could define all the testing logic, and child implementations only provide the data.</p>
+
+<h3><a id="example" class="anchor" href="#example">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>Example</h3>
+
+<pre><code class="language-crystal"><span class="k">require</span> <span class="s">&quot;athena-spec&quot;</span>
+
+<span class="k">struct</span> <span class="t">DataProviderTest</span> <span class="o">&lt;</span> <span class="t">ASPEC</span><span class="t">::</span><span class="t">TestCase</span>
+  @[<span class="t">DataProvider</span>(<span class="s">&quot;get_values_hash&quot;</span>)]
+  @[<span class="t">DataProvider</span>(<span class="s">&quot;get_values_named_tuple&quot;</span>)]
+  <span class="k">def</span> <span class="m">test_squares</span>(value : <span class="t">Int32</span>, expected : <span class="t">Int32</span>) : <span class="t">Nil</span>
+    (value <span class="o">**</span> <span class="n">2</span>).should eq expected
+  <span class="k">end</span>
+
+  <span class="c"># A keyed provider using a Hash.</span>
+  <span class="k">def</span> <span class="m">get_values_hash</span> : <span class="t">Hash</span>
+    {
+      <span class="s">&quot;two&quot;</span>   => {<span class="n">2</span>, <span class="n">4</span>},
+      <span class="s">&quot;three&quot;</span> => {<span class="n">3</span>, <span class="n">9</span>},
+    }
+  <span class="k">end</span>
+
+  <span class="c"># A keyed provider using a NamedTuple.</span>
+  <span class="k">def</span> <span class="m">get_values_named_tuple</span> : <span class="t">NamedTuple</span>
+    {
+      four: {<span class="n">4</span>, <span class="n">16</span>},
+      five: {<span class="n">5</span>, <span class="n">25</span>},
+    }
+  <span class="k">end</span>
+
+  @[<span class="t">DataProvider</span>(<span class="s">&quot;get_values_array&quot;</span>)]
+  @[<span class="t">DataProvider</span>(<span class="s">&quot;get_values_tuple&quot;</span>)]
+  <span class="k">def</span> <span class="m">test_cubes</span>(value : <span class="t">Int32</span>, expected : <span class="t">Int32</span>) : <span class="t">Nil</span>
+    (value <span class="o">**</span> <span class="n">3</span>).should eq expected
+  <span class="k">end</span>
+
+  <span class="c"># A keyless provider using an Array.</span>
+  <span class="k">def</span> <span class="m">get_values_array</span> : <span class="t">Array</span>
+    [
+      {<span class="n">2</span>, <span class="n">8</span>},
+      {<span class="n">3</span>, <span class="n">27</span>},
+    ]
+  <span class="k">end</span>
+
+  <span class="c"># A keyless provider using a Tuple.</span>
+  <span class="k">def</span> <span class="m">get_values_tuple</span> : <span class="t">Tuple</span>
+    {
+      {<span class="n">4</span>, <span class="n">64</span>},
+      {<span class="n">5</span>, <span class="n">125</span>},
+    }
+  <span class="k">end</span>
+<span class="k">end</span>
+
+<span class="t">ASPEC</span>.run_all <span class="c"># =&gt;</span>
+<span class="c"># DataProviderTest</span>
+<span class="c">#   squares two</span>
+<span class="c">#   squares three</span>
+<span class="c">#   squares four</span>
+<span class="c">#   squares five</span>
+<span class="c">#   cubes 0</span>
+<span class="c">#   cubes 1</span>
+<span class="c">#   cubes 0</span>
+<span class="c">#   cubes 1</span></code></pre>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2>
+    <a id="defined-in" class="anchor" href="#defined-in">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Defined in:
+  </h2>
+  
+    
+      <a href="https://github.com/athena-framework/dependency-injection/blob/38ea4f122af6fba2138d527a5c93495ac7103389/lib/athena-spec/src/test_case.cr#L248" target="_blank">
+        lib/athena-spec/src/test_case.cr
+      </a>
+    
+    <br/>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="methods-inherited">
+  
+</div>
+
+
+
+
+
+
+
+
+
+</div>
+
+</body>
+</html>

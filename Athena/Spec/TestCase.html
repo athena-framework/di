@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="generator" content="Crystal Docs 0.35.1">
+<meta name="crystal_docs.project_version" content="master">
+<meta name="crystal_docs.project_name" content="athena-dependency_injection">
+
+
+
+<link href="../../css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../../js/doc.js"></script>
+
+  <meta name="repository-name" content="athena-dependency_injection">
+  <title>Athena::Spec::TestCase - athena-dependency_injection master</title>
+  <script type="text/javascript">
+    CrystalDocs.base_path = "../../";
+  </script>
+</head>
+<body>
+
+<svg class="hidden">
+  <symbol id="octicon-link" viewBox="0 0 16 16">
+    <path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
+  </symbol>
+</svg>
+<div class="sidebar">
+  <div class="sidebar-header">
+    <div class="search-box">
+      <input type="search" class="search-input" placeholder="Search..." spellcheck="false" aria-label="Search">
+    </div>
+
+    <div class="project-summary">
+      <h1 class="project-name">
+        <a href="../../index.html">
+          athena-dependency_injection
+        </a>
+      </h1>
+
+      <span class="project-version">
+        master
+      </span>
+    </div>
+  </div>
+
+  <div class="search-results hidden">
+    <ul class="search-list"></ul>
+  </div>
+
+  <div class="types-list">
+    <ul>
+  
+  <li class=" " data-id="athena-dependency_injection/ACF" data-name="acf">
+      <a href="../../ACF.html">ACF</a>
+      
+    </li>
+  
+  <li class=" " data-id="athena-dependency_injection/ACFA" data-name="acfa">
+      <a href="../../ACFA.html">ACFA</a>
+      
+    </li>
+  
+  <li class=" " data-id="athena-dependency_injection/ADI" data-name="adi">
+      <a href="../../ADI.html">ADI</a>
+      
+    </li>
+  
+  <li class=" " data-id="athena-dependency_injection/ASPEC" data-name="aspec">
+      <a href="../../ASPEC.html">ASPEC</a>
+      
+    </li>
+  
+  <li class="parent open current" data-id="athena-dependency_injection/Athena" data-name="athena">
+      <a href="../../Athena.html">Athena</a>
+      
+        <ul>
+  
+  <li class="parent " data-id="athena-dependency_injection/Athena/Config" data-name="athena::config">
+      <a href="../../Athena/Config.html">Config</a>
+      
+        <ul>
+  
+  <li class="parent " data-id="athena-dependency_injection/Athena/Config/AnnotationConfigurations" data-name="athena::config::annotationconfigurations">
+      <a href="../../Athena/Config/AnnotationConfigurations.html">AnnotationConfigurations</a>
+      
+        <ul>
+  
+  <li class=" " data-id="athena-dependency_injection/Athena/Config/AnnotationConfigurations/AnnotationHash" data-name="athena::config::annotationconfigurations::annotationhash">
+      <a href="../../Athena/Config/AnnotationConfigurations/AnnotationHash.html">AnnotationHash</a>
+      
+    </li>
+  
+  <li class=" " data-id="athena-dependency_injection/Athena/Config/AnnotationConfigurations/Classes" data-name="athena::config::annotationconfigurations::classes">
+      <a href="../../Athena/Config/AnnotationConfigurations/Classes.html">Classes</a>
+      
+    </li>
+  
+  <li class=" " data-id="athena-dependency_injection/Athena/Config/AnnotationConfigurations/ConfigurationBase" data-name="athena::config::annotationconfigurations::configurationbase">
+      <a href="../../Athena/Config/AnnotationConfigurations/ConfigurationBase.html">ConfigurationBase</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class="parent " data-id="athena-dependency_injection/Athena/Config/Annotations" data-name="athena::config::annotations">
+      <a href="../../Athena/Config/Annotations.html">Annotations</a>
+      
+        <ul>
+  
+  <li class=" " data-id="athena-dependency_injection/Athena/Config/Annotations/Resolvable" data-name="athena::config::annotations::resolvable">
+      <a href="../../Athena/Config/Annotations/Resolvable.html">Resolvable</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="athena-dependency_injection/Athena/Config/Base" data-name="athena::config::base">
+      <a href="../../Athena/Config/Base.html">Base</a>
+      
+    </li>
+  
+  <li class=" " data-id="athena-dependency_injection/Athena/Config/ConfigurationResolver" data-name="athena::config::configurationresolver">
+      <a href="../../Athena/Config/ConfigurationResolver.html">ConfigurationResolver</a>
+      
+    </li>
+  
+  <li class=" " data-id="athena-dependency_injection/Athena/Config/ConfigurationResolverInterface" data-name="athena::config::configurationresolverinterface">
+      <a href="../../Athena/Config/ConfigurationResolverInterface.html">ConfigurationResolverInterface</a>
+      
+    </li>
+  
+  <li class=" " data-id="athena-dependency_injection/Athena/Config/Parameters" data-name="athena::config::parameters">
+      <a href="../../Athena/Config/Parameters.html">Parameters</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class="parent " data-id="athena-dependency_injection/Athena/DependencyInjection" data-name="athena::dependencyinjection">
+      <a href="../../Athena/DependencyInjection.html">DependencyInjection</a>
+      
+        <ul>
+  
+  <li class=" " data-id="athena-dependency_injection/Athena/DependencyInjection/Inject" data-name="athena::dependencyinjection::inject">
+      <a href="../../Athena/DependencyInjection/Inject.html">Inject</a>
+      
+    </li>
+  
+  <li class=" " data-id="athena-dependency_injection/Athena/DependencyInjection/Proxy" data-name="athena::dependencyinjection::proxy(o)">
+      <a href="../../Athena/DependencyInjection/Proxy.html">Proxy</a>
+      
+    </li>
+  
+  <li class=" " data-id="athena-dependency_injection/Athena/DependencyInjection/Register" data-name="athena::dependencyinjection::register">
+      <a href="../../Athena/DependencyInjection/Register.html">Register</a>
+      
+    </li>
+  
+  <li class=" " data-id="athena-dependency_injection/Athena/DependencyInjection/ServiceContainer" data-name="athena::dependencyinjection::servicecontainer">
+      <a href="../../Athena/DependencyInjection/ServiceContainer.html">ServiceContainer</a>
+      
+    </li>
+  
+  <li class="parent " data-id="athena-dependency_injection/Athena/DependencyInjection/Spec" data-name="athena::dependencyinjection::spec">
+      <a href="../../Athena/DependencyInjection/Spec.html">Spec</a>
+      
+        <ul>
+  
+  <li class=" " data-id="athena-dependency_injection/Athena/DependencyInjection/Spec/MockableServiceContainer" data-name="athena::dependencyinjection::spec::mockableservicecontainer">
+      <a href="../../Athena/DependencyInjection/Spec/MockableServiceContainer.html">MockableServiceContainer</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class="parent open current" data-id="athena-dependency_injection/Athena/Spec" data-name="athena::spec">
+      <a href="../../Athena/Spec.html">Spec</a>
+      
+        <ul>
+  
+  <li class=" " data-id="athena-dependency_injection/Athena/Spec/Methods" data-name="athena::spec::methods">
+      <a href="../../Athena/Spec/Methods.html">Methods</a>
+      
+    </li>
+  
+  <li class="parent open current" data-id="athena-dependency_injection/Athena/Spec/TestCase" data-name="athena::spec::testcase">
+      <a href="../../Athena/Spec/TestCase.html">TestCase</a>
+      
+        <ul>
+  
+  <li class=" " data-id="athena-dependency_injection/Athena/Spec/TestCase/DataProvider" data-name="athena::spec::testcase::dataprovider">
+      <a href="../../Athena/Spec/TestCase/DataProvider.html">DataProvider</a>
+      
+    </li>
+  
+  <li class=" " data-id="athena-dependency_injection/Athena/Spec/TestCase/Focus" data-name="athena::spec::testcase::focus">
+      <a href="../../Athena/Spec/TestCase/Focus.html">Focus</a>
+      
+    </li>
+  
+  <li class=" " data-id="athena-dependency_injection/Athena/Spec/TestCase/Pending" data-name="athena::spec::testcase::pending">
+      <a href="../../Athena/Spec/TestCase/Pending.html">Pending</a>
+      
+    </li>
+  
+  <li class=" " data-id="athena-dependency_injection/Athena/Spec/TestCase/Tags" data-name="athena::spec::testcase::tags">
+      <a href="../../Athena/Spec/TestCase/Tags.html">Tags</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+</ul>
+
+  </div>
+</div>
+
+
+<div class="main-content">
+<h1 class="type-name">
+
+  <span class="kind">abstract struct</span> Athena::Spec::TestCase
+
+</h1>
+
+
+  <ul class="superclass-hierarchy"><li class="superclass"><a href="../../Athena/Spec/TestCase.html">Athena::Spec::TestCase</a></li><li class="superclass">Struct</li><li class="superclass">Value</li><li class="superclass">Object</li></ul>
+
+
+
+
+  <h2>
+    <a id="overview" class="anchor" href="#overview">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Overview
+  </h2>
+
+  <p><code><a href="../../Athena/Spec/TestCase.html">ASPEC::TestCase</a></code> provides a <a href="https://crystal-lang.org/api/Spec.html">Spec</a> compliant
+alternative DSL for creating unit and integration tests.  It allows structuring tests
+in a more OOP fashion, with the main benefits of reusability and extendability.</p>
+
+<p>This type can be extended to share common testing logic with groups of similar types.
+Any tests defined within a parent will run for each child test case.
+<code>abstract def</code>, <code>super</code>, and other OOP features can be used as well to reduce duplication.
+Some additional features are also built in, such as the <code><a href="../../Athena/Spec/TestCase/DataProvider.html">DataProvider</a></code>.</p>
+
+<p><span class="flag purple">NOTE</span>  This is <em>NOT</em> a standalone testing framework.  Everything boils down to standard <code>describe</code>, <code>it</code>, and/or <code>pending</code> blocks.</p>
+
+<p>A test case consists of a <code>struct</code> inheriting from <code>self</code>, optionally with an <code>#initialize</code> method in order to
+initialize the state that should be used for each test.</p>
+
+<p>A test is a method that starts with <code>test_</code>, where the method name is used as the description.
+For example, <code>test_some_method_some_context</code> becomes <code>"some method some context"</code>.
+Internally each test method maps to an <code>it</code> block.
+All of the stdlib's <code><a href="../../Athena/Spec.html">Spec</a></code> assertions methods are available, in addition to
+<a href="https://crystal-lang.org/api/Spec/Methods.html#pending!%28msg=%22Cannotrunexample%22,file=__FILE__,line=__LINE__%29-instance-method">#pending!</a> and
+<a href="https://crystal-lang.org/api/Spec/Methods.html#fail%28msg,file=__FILE__,line=__LINE__%29-instance-method">#fail</a>.</p>
+
+<p>A method may be focused by either prefixing the method name with an <code>f</code>, or applying the <code><a href="../../Athena/Spec/TestCase/Focus.html">Focus</a></code> annotation.</p>
+
+<p>A method may be marked pending by either prefixing the method name with a <code>p</code>, or applying the <code><a href="../../Athena/Spec/TestCase/Pending.html">Pending</a></code> annotation.
+Internally this maps to a <code>pending</code> block.</p>
+
+<p>Tags may be applied to a method via the <code><a href="../../Athena/Spec/TestCase/Tags.html">Tags</a></code> annotation.</p>
+
+<p>The <code><a href="../../Athena/Spec/TestCase/Tags.html">Tags</a></code>, <code><a href="../../Athena/Spec/TestCase/Focus.html">Focus</a></code>, and <code><a href="../../Athena/Spec/TestCase/Pending.html">Pending</a></code> annotations may also be applied to the test case type as well, with a similar affect.</p>
+
+<h3><a id="example" class="anchor" href="#example">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>Example</h3>
+
+<pre><code class="language-crystal"><span class="c"># Require the stdlib&#39;s spec module.</span>
+<span class="k">require</span> <span class="s">&quot;spec&quot;</span>
+
+<span class="c"># Define a class to test.</span>
+<span class="k">class</span> <span class="t">Calculator</span>
+  <span class="k">def</span> <span class="m">add</span>(v1, v2)
+    v1 <span class="o">+</span> v2
+  <span class="k">end</span>
+
+  <span class="k">def</span> <span class="m">subtract</span>(v1, v2)
+    raise <span class="t">NotImplementedError</span>.<span class="k">new</span> <span class="s">&quot;TODO&quot;</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+
+<span class="c"># An example test case.</span>
+<span class="k">struct</span> <span class="t">ExampleSpec</span> <span class="o">&lt;</span> <span class="t">ASPEC</span><span class="t">::</span><span class="t">TestCase</span>
+  @target : <span class="t">Calculator</span>
+
+  <span class="c"># Initialize the test target along with any dependencies.</span>
+  <span class="k">def</span> <span class="m">initialize</span> : <span class="t">Nil</span>
+    @target <span class="o">=</span> <span class="t">Calculator</span>.<span class="k">new</span>
+  <span class="k">end</span>
+
+  <span class="c"># All of the stdlib&#39;s `Spec` methods can be used,</span>
+  <span class="c"># plus any custom methods defined in `ASPEC::Methods`.</span>
+  <span class="k">def</span> <span class="m">test_add</span> : <span class="t">Nil</span>
+    @target.add(<span class="n">1</span>, <span class="n">2</span>).should eq <span class="n">3</span>
+  <span class="k">end</span>
+
+  <span class="c"># A pending test.</span>
+  <span class="k">def</span> <span class="m">ptest_substract</span> : <span class="t">Nil</span>
+    @target.subtract(<span class="n">10</span>, <span class="n">5</span>).should eq <span class="n">5</span>
+  <span class="k">end</span>
+
+  <span class="c"># Private/protected methods can be used to reduce duplication within the context of single test case.</span>
+  <span class="k">private</span> <span class="k">def</span> <span class="m">helper_method</span>
+    <span class="c"># ...</span>
+  <span class="k">end</span>
+<span class="k">end</span></code></pre>
+
+<h2><a id="inheritance" class="anchor" href="#inheritance">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>Inheritance</h2>
+
+<p>Inheritance can be used to build reusable test cases for groups of similar objects</p>
+
+<pre><code class="language-crystal"><span class="k">abstract</span> <span class="k">struct</span> <span class="t">SomeTypeTestCase</span> <span class="o">&lt;</span> <span class="t">ASPEC</span><span class="t">::</span><span class="t">TestCase</span>
+  <span class="c"># Require children to define a method to get the object.</span>
+  <span class="k">protected</span> <span class="k">abstract</span> <span class="k">def</span> <span class="m">get_object</span> : <span class="t">Calculator</span>
+
+  <span class="c"># Test cases can use the abstract method for tests common to all test cases of this type.</span>
+  <span class="k">def</span> <span class="m">test_common</span> : <span class="t">Nil</span>
+    obj <span class="o">=</span> <span class="k">self</span>.get_object
+
+    <span class="c"># ...</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+
+<span class="k">struct</span> <span class="t">CalculatorTest</span> <span class="o">&lt;</span> <span class="t">SomeTypeTestCase</span>
+  <span class="k">protected</span> <span class="k">def</span> <span class="m">get_object</span> : <span class="t">Calculator</span>
+    <span class="t">Calculator</span>.<span class="k">new</span>
+  <span class="k">end</span>
+
+  <span class="c"># Additional tests specific to this type.</span>
+  <span class="k">def</span> <span class="m">test_specific</span> : <span class="t">Nil</span>
+    <span class="c"># ...</span>
+  <span class="k">end</span>
+<span class="k">end</span></code></pre>
+
+<h2><a id="data-providers" class="anchor" href="#data-providers">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>Data Providers</h2>
+
+<p>A <code><a href="../../Athena/Spec/TestCase/DataProvider.html">DataProvider</a></code> can be used to reduce duplication, see the corresponding annotation or more information.</p>
+
+<pre><code class="language-crystal"><span class="k">struct</span> <span class="t">DataProviderTest</span> <span class="o">&lt;</span> <span class="t">ASPEC</span><span class="t">::</span><span class="t">TestCase</span>
+  <span class="c"># Data Providers allow reusing a test&#39;s multiple times with different input.</span>
+  @[<span class="t">DataProvider</span>(<span class="s">&quot;get_values&quot;</span>)]
+  <span class="k">def</span> <span class="m">test_squares</span>(value : <span class="t">Int32</span>, expected : <span class="t">Int32</span>) : <span class="t">Nil</span>
+    (value <span class="o">**</span> <span class="n">2</span>).should eq expected
+  <span class="k">end</span>
+
+  <span class="c"># Returns a hash where the key represents the name of the test,</span>
+  <span class="c"># and the value is a Tuple of data that should be provided to the test.</span>
+  <span class="k">def</span> <span class="m">get_values</span> : <span class="t">Hash</span>
+    {
+      <span class="s">&quot;two&quot;</span>   => {<span class="n">2</span>, <span class="n">4</span>},
+      <span class="s">&quot;three&quot;</span> => {<span class="n">3</span>, <span class="n">9</span>},
+    }
+  <span class="k">end</span>
+<span class="k">end</span></code></pre>
+
+<pre><code class="language-crystal"><span class="c"># Run all the test cases</span>
+<span class="t">ASPEC</span>.run_all <span class="c"># =&gt;</span>
+<span class="c"># ExampleSpec</span>
+<span class="c">#   add</span>
+<span class="c">#   subtract</span>
+<span class="c">#   a custom method name</span>
+<span class="c"># CalculatorTest</span>
+<span class="c">#   common</span>
+<span class="c">#   specific</span>
+<span class="c"># DataProviderTest</span>
+<span class="c">#   squares two</span>
+<span class="c">#   squares three</span>
+<span class="c">#</span>
+<span class="c"># Pending:</span>
+<span class="c"># ExampleSpec subtract</span>
+<span class="c">#</span>
+<span class="c"># Finished in 172 microseconds</span>
+<span class="c"># 7 examples, 0 failures, 0 errors, 1 pending</span></code></pre>
+
+
+
+
+
+  <h2>
+    <a id="included-modules" class="anchor" href="#included-modules">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Included Modules
+  </h2>
+  <ul class="other-types-list">
+    
+      <li class="other-type"><a href="../../Athena/Spec/Methods.html">Athena::Spec::Methods</a></li>
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+  <h2>
+    <a id="defined-in" class="anchor" href="#defined-in">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Defined in:
+  </h2>
+  
+    
+      <a href="https://github.com/athena-framework/dependency-injection/blob/38ea4f122af6fba2138d527a5c93495ac7103389/lib/athena-spec/src/test_case.cr#L147" target="_blank">
+        lib/athena-spec/src/test_case.cr
+      </a>
+    
+    <br/>
+  
+
+
+
+
+
+  <h2>
+    <a id="constructors" class="anchor" href="#constructors">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Constructors
+  </h2>
+  <ul class="list-summary">
+    
+      <li class="entry-summary">
+        <a href="#new-class-method" class="signature"><strong>.new</strong></a>
+        
+          <div class="summary"><p>Runs before each test.</p></div>
+        
+      </li>
+    
+  </ul>
+
+
+
+  <h2>
+    <a id="class-method-summary" class="anchor" href="#class-method-summary">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Class Method Summary
+  </h2>
+  <ul class="list-summary">
+    
+      <li class="entry-summary">
+        <a href="#run:Nil-class-method" class="signature"><strong>.run</strong> : Nil</a>
+        
+          <div class="summary"><p>Runs the tests contained within <code>self</code>.</p></div>
+        
+      </li>
+    
+  </ul>
+
+
+
+  <h2>
+    <a id="instance-method-summary" class="anchor" href="#instance-method-summary">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Instance Method Summary
+  </h2>
+  <ul class="list-summary">
+    
+      <li class="entry-summary">
+        <a href="#after_all:Nil-instance-method" class="signature"><strong>#after_all</strong> : Nil</a>
+        
+          <div class="summary"><p>Runs once after all tests within <code>self</code> have been executed.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#before_all:Nil-instance-method" class="signature"><strong>#before_all</strong> : Nil</a>
+        
+          <div class="summary"><p>Runs once before any tests within <code>self</code> have been executed.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#tear_down:Nil-instance-method" class="signature"><strong>#tear_down</strong> : Nil</a>
+        
+          <div class="summary"><p>Runs after each test.</p></div>
+        
+      </li>
+    
+  </ul>
+
+
+
+
+
+<div class="methods-inherited">
+  
+    
+
+  <h3>Instance methods inherited from module <code><a href="../../Athena/Spec/Methods.html">Athena::Spec::Methods</a></code></h3>
+  
+  
+    <a href="../../Athena/Spec/Methods.html#assert_error(file_path:String,message:String,*,prefix:String=&quot;spec/&quot;):Nil-instance-method" class="tooltip">
+      <span>assert_error(file_path : String, message : String, *, prefix : String = <span class="s">&quot;spec/&quot;</span>) : Nil</span>
+    assert_error</a>, 
+    
+  
+    <a href="../../Athena/Spec/Methods.html#run_executable(path:String,args:Array(String)=[]ofString,&:String,String,Process::Status-%3E):Nil-instance-method" class="tooltip">
+      <span>run_executable(path : String, args : Array(String) = <span class="o">[]</span> <span class="k">of</span> <span class="t">String</span>, & : String, String, Process::Status -> ) : Nil<br/>run_executable(path : String, input : IO, args : Array(String) = <span class="o">[]</span> <span class="k">of</span> <span class="t">String</span>, & : String, String, Process::Status -> ) : Nil</span>
+    run_executable</a>
+    
+  
+
+
+    
+
+
+    
+
+
+  
+    
+
+
+    
+
+
+    
+
+
+  
+    
+
+
+    
+
+
+    
+
+
+  
+    
+
+
+    
+
+
+    
+
+
+  
+</div>
+
+
+  <h2>
+    <a id="constructor-detail" class="anchor" href="#constructor-detail">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Constructor Detail
+  </h2>
+  
+    <div class="entry-detail" id="new-class-method">
+      <div class="signature">
+        
+        def self.<strong>new</strong>
+
+        <a class="method-permalink" href="#new-class-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Runs before each test.</p>
+
+<p>Used to create the objects that will be used within the tests.</p>
+
+<pre><code class="language-crystal"><span class="k">require</span> <span class="s">&quot;spec&quot;</span>
+<span class="k">require</span> <span class="s">&quot;athena-spec&quot;</span>
+
+<span class="k">struct</span> <span class="t">ExampleSpec</span> <span class="o">&lt;</span> <span class="t">ASpec</span><span class="t">::</span><span class="t">TestCase</span>
+  @value : <span class="t">Int32</span>
+
+  <span class="k">def</span> <span class="m">initialize</span> : <span class="t">Nil</span>
+    @value <span class="o">=</span> <span class="n">1</span>
+  <span class="k">end</span>
+
+  <span class="k">def</span> <span class="m">test_one</span> : <span class="t">Nil</span>
+    @value += <span class="n">1</span>
+
+    @value <span class="c"># =&gt; 2</span>
+  <span class="k">end</span>
+
+  <span class="k">def</span> <span class="m">test_two</span> : <span class="t">Nil</span>
+    @value <span class="c"># =&gt; 1</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+
+<span class="t">ExampleSpec</span>.run</code></pre>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/athena-framework/dependency-injection/blob/38ea4f122af6fba2138d527a5c93495ac7103389/lib/athena-spec/src/test_case.cr#L406" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+
+
+
+  <h2>
+    <a id="class-method-detail" class="anchor" href="#class-method-detail">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Class Method Detail
+  </h2>
+  
+    <div class="entry-detail" id="run:Nil-class-method">
+      <div class="signature">
+        
+        def self.<strong>run</strong> : Nil
+
+        <a class="method-permalink" href="#run:Nil-class-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Runs the tests contained within <code>self</code>.</p>
+
+<p>See <code><a href="../../Athena/Spec.html#run_all:Nil-class-method">Athena::Spec.run_all</a></code> to run all test cases.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/athena-framework/dependency-injection/blob/38ea4f122af6fba2138d527a5c93495ac7103389/lib/athena-spec/src/test_case.cr#L253" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+
+
+
+  <h2>
+    <a id="instance-method-detail" class="anchor" href="#instance-method-detail">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Instance Method Detail
+  </h2>
+  
+    <div class="entry-detail" id="after_all:Nil-instance-method">
+      <div class="signature">
+        
+        def <strong>after_all</strong> : Nil
+
+        <a class="method-permalink" href="#after_all:Nil-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Runs once after all tests within <code>self</code> have been executed.</p>
+
+<pre><code class="language-crystal"><span class="k">require</span> <span class="s">&quot;spec&quot;</span>
+<span class="k">require</span> <span class="s">&quot;athena-spec&quot;</span>
+
+<span class="k">struct</span> <span class="t">ExampleSpec</span> <span class="o">&lt;</span> <span class="t">ASPEC</span><span class="t">::</span><span class="t">TestCase</span>
+  <span class="k">def</span> <span class="m">after_all</span> : <span class="t">Nil</span>
+    puts <span class="s">&quot;This prints only once after anything else&quot;</span>
+  <span class="k">end</span>
+
+  <span class="k">def</span> <span class="m">test_one</span> : <span class="t">Nil</span>
+    <span class="n">true</span>.should be_true
+  <span class="k">end</span>
+
+  <span class="k">def</span> <span class="m">test_two</span> : <span class="t">Nil</span>
+    <span class="n">1</span>.should eq <span class="n">1</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+
+<span class="t">ExampleSpec</span>.run</code></pre>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/athena-framework/dependency-injection/blob/38ea4f122af6fba2138d527a5c93495ac7103389/lib/athena-spec/src/test_case.cr#L375" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="before_all:Nil-instance-method">
+      <div class="signature">
+        
+        def <strong>before_all</strong> : Nil
+
+        <a class="method-permalink" href="#before_all:Nil-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Runs once before any tests within <code>self</code> have been executed.</p>
+
+<p>Can be used to initialize objects common to every test,
+but that do not need to be reset before running each test.</p>
+
+<pre><code class="language-crystal"><span class="k">require</span> <span class="s">&quot;spec&quot;</span>
+<span class="k">require</span> <span class="s">&quot;athena-spec&quot;</span>
+
+<span class="k">struct</span> <span class="t">ExampleSpec</span> <span class="o">&lt;</span> <span class="t">ASPEC</span><span class="t">::</span><span class="t">TestCase</span>
+  <span class="k">def</span> <span class="m">before_all</span> : <span class="t">Nil</span>
+    puts <span class="s">&quot;This prints only once before anything else&quot;</span>
+  <span class="k">end</span>
+
+  <span class="k">def</span> <span class="m">test_one</span> : <span class="t">Nil</span>
+    <span class="n">true</span>.should be_true
+  <span class="k">end</span>
+
+  <span class="k">def</span> <span class="m">test_two</span> : <span class="t">Nil</span>
+    <span class="n">1</span>.should eq <span class="n">1</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+
+<span class="t">ExampleSpec</span>.run</code></pre>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/athena-framework/dependency-injection/blob/38ea4f122af6fba2138d527a5c93495ac7103389/lib/athena-spec/src/test_case.cr#L350" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="tear_down:Nil-instance-method">
+      <div class="signature">
+        
+        def <strong>tear_down</strong> : Nil
+
+        <a class="method-permalink" href="#tear_down:Nil-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Runs after each test.</p>
+
+<p>Can be used to cleanup data in between tests, such as releasing a connection or closing a file.</p>
+
+<pre><code class="language-crystal"><span class="k">require</span> <span class="s">&quot;spec&quot;</span>
+<span class="k">require</span> <span class="s">&quot;athena-spec&quot;</span>
+
+<span class="k">struct</span> <span class="t">ExampleSpec</span> <span class="o">&lt;</span> <span class="t">ASPEC</span><span class="t">::</span><span class="t">TestCase</span>
+  @file : <span class="t">File</span>
+
+  <span class="k">def</span> <span class="m">initialize</span> : <span class="t">Nil</span>
+    @file <span class="o">=</span> <span class="t">File</span>.<span class="k">new</span> <span class="s">&quot;./foo.txt&quot;</span>, <span class="s">&quot;w&quot;</span>
+  <span class="k">end</span>
+
+  <span class="k">def</span> <span class="m">tear_down</span> : <span class="t">Nil</span>
+    @file.close
+  <span class="k">end</span>
+
+  <span class="k">def</span> <span class="m">test_one</span> : <span class="t">Nil</span>
+    @file.path <span class="c"># =&gt; &quot;./foo.txt&quot;</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+
+<span class="t">ExampleSpec</span>.run</code></pre>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/athena-framework/dependency-injection/blob/38ea4f122af6fba2138d527a5c93495ac7103389/lib/athena-spec/src/test_case.cr#L435" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+
+
+
+
+</div>
+
+</body>
+</html>
